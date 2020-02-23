@@ -1,0 +1,19 @@
+.feedback {
+    z-index: 4;
+    .dialog-action {
+        position: fixed;
+        right: -39px;
+        top: calc(50% - 15.5px);
+        .btn {
+            transform: rotate(-90deg);
+        }
+    }
+    .feedback-body {
+        article.active {
+            display: block;
+        }
+        article.hide {
+            display: none;
+        }
+    }
+}

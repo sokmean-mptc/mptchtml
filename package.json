@@ -3,11 +3,21 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "webpack --config webpack.config.js"
+    "build": "webpack --config webpack.config.js",
+    "start": "webpack --mode=development --watch --config webpack.config.js"
   },
   "author": "sokmean-mptc",
   "license": "MIT",
+  "browserslist": [
+    "last 4 version",
+    "iOS 7",
+    "last 3 iOS versions"
+  ],
   "devDependencies": {
+    "autoprefixer": "^9.7.4",
+    "browser-sync": "^2.26.7",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "clean-webpack-plugin": "^2.0.2",
     "css-loader": "^2.1.1",
     "fibers": "^4.0.1",
     "file-loader": "^3.0.1",

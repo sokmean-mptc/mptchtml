@@ -1,0 +1,42 @@
+.star {
+    ul {
+        margin: 0px;
+        padding: 0px;
+        display: inline-block;
+        li {
+            margin: 0px;
+            margin-left: 20px;
+            padding: 0px;
+            display: inline-block;
+            span {
+                font-size: 32px;
+                cursor: pointer;
+                color: $gray-500;
+                transition: 0.5s;
+            }
+        }
+        
+        li:hover {
+            span {
+                color: $gray-500!important;
+            }
+            > span {
+                color: $blue!important;
+            }
+        }
+        li.selected,
+        li.selected:hover {
+            span {
+                color: $gray-500;
+            }
+            > span {
+                color: $blue;
+            }
+        }
+    }
+    > ul {
+        > li {
+            margin: 0px;
+        }
+    }
+}
