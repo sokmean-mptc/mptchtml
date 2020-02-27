@@ -1,13 +1,11 @@
-const path = require('path');
-const webpack = require('webpack');
-const TerserJSPlugin = require('terser-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const path = require('path')
+const webpack = require('webpack')
+const TerserJSPlugin = require('terser-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 
 module.exports = {
-    mode: 'production',
     entry: ['./src/js/main.js', './src/sass/main.scss'],
     output: {
         filename: "main.js",
@@ -17,9 +15,28 @@ module.exports = {
         rules: [{
             test: /\.(sa|sc|c)ss$/,
             use: [
-                MiniCssExtractPlugin.loader,
-                'css-loader',
-                'sass-loader'
+                {
+                    loader: MiniCssExtractPlugin.loader
+                },
+                {
+                    loader: 'css-loader',
+                    options: {
+                        sourceMap: true
+                    }
+                },
+                {
+                    loader: 'postcss-loader',
+                    options: {
+                        sourceMap: true,
+                        config: {
+                            path: 'postcss.config.js'
+                        }
+                    }
+                },
+                {
+                    loader: 'sass-loader',
+                    options: { sourceMap: true }
+                }
             ]
         },{
             test: /\.(jpe?g|png|gif$)/,
@@ -31,7 +48,7 @@ module.exports = {
                 }
             }]
         },{
-            test: /\.(ttf|eot|otf|svg|woff$)/,
+            test: /\.(ttf|eot|otf|svg|woff|woff2$)/,
             use: [{
                 loader: 'file-loader',
                 options: {
@@ -49,7 +66,6 @@ module.exports = {
             $: 'jquery',
             jQuery: 'jquery'
         }),
-        new CleanWebpackPlugin(),
         new BrowserSyncPlugin()
     ],
     optimization: {

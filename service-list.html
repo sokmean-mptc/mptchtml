@@ -1,0 +1,847 @@
+<!doctype html>
+<html class="responsive" lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<!-- initial-scale=1 : responsive default -->
+		<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+		
+		<link rel="icon" type="image/png" href="src/sass/images/logo-16x16.png" sizes="16x16" />
+		<link rel="icon" type="image/png" href="src/sass/images/logo-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="src/sass/images/logo-96x96.png" sizes="96x96" />
+		
+		<!-- load main style -->
+		<link rel="stylesheet" type="text/css" href="dist/main.css" />
+
+		<title>ក្រសួងប្រៃសណីយ៍ និងទូរគមនាគមន៍ | Ministry of Posts and Telecommunications</title>
+		
+		<!-- options -->
+		<style>
+			.primary-color, a, a:hover, .marquee ul li a, .tab-collapse > li.active > a::before, .block-title3 a::after, .block-title3 span::after, .pagination a, .breadcrum a, .category a { color: #2082c3; }
+			.primary-background-color, .marquee.fix-top, .lg-main-nav ul ul, .slick-slideshow ul.slick-dots, .pagination ul li.active span, .nav-sidebar-2 ul li.active, .nav-sidebar-3 ul li.active, .languages ul li.active { background-color: #2082c3; }
+			.fill { fill: #2082c3; }
+			.non-responsive .container, .non-responsive .wrapper, .non-responsive .fix-top { min-width: 1024px; }
+		</style>
+	</head>
+	<body id="body" data-spy="scroll" data-target="#menu-tab" data-offset="10">
+		<!-- wrap all content container -->
+		<div class="wrapper">
+			<!-- mobile menu on left sidebar -->
+			<div class="nav-sidebar d-md-block d-lg-none primary-background-color">
+				<div class="nav-sidebar-header">
+					<!-- mobile Royal Cambodia logo & title -->
+					<!--img class="khmer-logo" src="src/sass/images/khmer-logo.png" /-->
+					<object class="khmer-logo" class="d-inline-block" type="image/svg+xml" data="src/sass/images/Royal_Cambodia.svg" width="" height=""></object>
+					<h1 class="font-moul khmer-title primary-color">ព្រះរាជាណាចក្រកម្ពុជា <br/>ជាតិ សាសនា ព្រះមហាក្សត្រ</h1>
+					<!-- mobile search form -->
+					<form class="form-inline">
+						<div class="input-group mb-3">
+							<div class="input-group-prepend primary-background-color">
+								<button class="btn btn-outline" type="submit" id="button-addon1"><span class="oi oi-magnifying-glass"></span></button>
+							</div>
+							<input type="text" class="form-control" placeholder="ស្វែងរក" aria-label="Example text with button addon" aria-describedby="button-addon1">
+						</div>
+					</form>	
+					<!-- mobile polylang -->
+					<div class="languages d-block text-center">
+						<ul>
+							<li class="active"><a href="#">ខ្មែរ</a></li>
+							<li><a href="#">Eng</a></li>
+						</ul>
+					</div>
+					<!-- mobile top menu bar -->
+					<ul class="short-link">
+						<li><a class="primary-color" href="#">ជជែកផ្ទាល់</a></li>
+						<li><a class="primary-color" href="#">ទំនាក់ទំនង</a></li>
+						<li><a class="primary-color" href="#">ផ្តល់មតិយោបល់</a></li>
+						<li><a class="primary-color" href="#">សំនួរ ចម្លើយ</a></li>
+					</ul>
+				</div>
+				<!-- mobile main navigation -->
+				<nav class="collapse-navbar sm-navbar">
+					<ul>
+					<!-- automaticaly adding html menu by script from desktop main navigation -->
+					</ul>
+				</nav>
+			</div>
+			<!-- contain all containers -->
+			<div class="content">
+				<!-- mobile header -->
+				<div class="sm-header d-md-block d-lg-none">
+					<div class="nav-button inline-block vertical-align-middle">
+						<span class="oi oi-menu nav-icon primary-color"></span>
+					</div>
+					<a href="index.html" class="sm-logo inline-block vertical-align-middle">
+						<img src="src/sass/images/logo.png" />
+					</a>
+					<div class="sm-title inline-block vertical-align-middle primary-color">
+						<h1 class="font-moul">ក្រសួងប្រៃសណីយ៍<br/>និងទូរគមនាគមន៍</h1>
+					</div>
+				</div>
+				<!-- desktop header -->
+				<div id="lg-header" class="lg-header-wrap d-none d-lg-block">
+					<div class="container lg-header">
+						<div class="row">
+							<!-- desktop logo and site title -->
+							<div class="col-7">
+								<a href="index.html" class="lg-logo inline-block vertical-align-middle">
+									<img src="src/sass/images/logo.png" />
+								</a>
+								<div class="lg-title inline-block vertical-align-middle primary-color">
+									<h1 class="font-moul">ក្រសួងប្រៃសណីយ៍<br/>និងទូរគមនាគមន៍</h1>
+									<span>MINISTRY OF POSTS<br/>AND TELECOMMUNICATIONS</span>
+								</div>
+							</div>
+							<!-- desktop Cambodia sign -->
+							<div class="col-5 logo-wrap text-right">
+								<!-- desktop Royal Cambodia logo -->
+								<h1 class="font-moul khmer-title primary-color inline-block">ព្រះរាជាណាចក្រកម្ពុជា <br/>ជាតិ សាសនា ព្រះមហាក្សត្រ</h1>
+								<!--img class="khmer-logo inline-block" src="src/sass/images/khmer-logo.png" /-->
+								<object class="khmer-logo" class="d-inline-block" type="image/svg+xml" data="src/sass/images/Royal_Cambodia.svg" width="" height="70"></object>
+								<br/>
+								<!-- desktop search form -->
+								<form class="form-inline inline-block">
+									<div class="input-group input-group-sm mb-2">
+										<div class="input-group-prepend primary-background-color">
+											<button class="btn btn-outline" type="submit" id="button-addon1"><span class="oi oi-magnifying-glass"></span></button>
+										</div>
+										<input type="text" class="form-control" placeholder="ស្វែងរក" aria-label="Example text with button addon" aria-describedby="button-addon1">
+									</div>
+								</form>
+								<!-- desktop polylang -->
+								<div class="languages d-inline-block">
+									<ul>
+										<li class="active"><a href="#">ខ្មែរ</a></li>
+										<li><a href="#">Eng</a></li>
+									</ul>
+								</div>
+								<!-- desktop top menu -->
+								<nav class="short-link">
+									<ul>
+										<li><a href="#">ជជែកផ្ទាល់</a></li>
+										<li><a href="#">ទំនាក់ទំនង</a></li>
+										<li><a href="#">ផ្តល់មតិយោបល់</a></li>
+										<li><a href="#">សំនួរ ចម្លើយ</a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- desktop main navigation -->
+				<div class="lg-main-nav-wrap container d-none d-lg-block">
+					<div class="row">
+						<nav class="lg-main-nav">
+							<ul>
+								<li><a href="#">ទំព័រដើម</a></li>
+								<li class="menu-item-has-children current-menu-ancestor"><a href="#">អំពីក្រសួង</a>
+									<ul class="sub-menu">
+										<li><a href="#">រដ្ឋមន្រ្តី</a></li>
+										<li><a href="#">ព័ត៌មានសង្ខេបស្តីពីក្រសួង</a></li>
+										<li><a href="#">រចនាសម្ព័ន្ធក្រសួង</a></li>
+										<li><a href="#">ថ្នាក់ដឹកនាំក្រសួង</a></li>
+										<li><a href="#">សកម្មភាពក្រសួង</a></li>
+										<li><a href="#">សហប្រត្តិ​បត្តិការ​អន្តរជាតិ</a></li>
+										<li class="current-menu-item"><a href="#">មន្ទីរតាមបណ្តាខេត្ត</a></li>
+									</ul>
+								</li>
+								<li class="menu-item-has-children"><a href="#">ច្បាប់និងបទបញ្ញត្តិ</a>
+									<ul class="sub-menu">
+										<li><a href="#">ច្បាប់</a></li>
+										<li><a href="#">ព្រះរាជក្រឹត្យ</a></li>
+										<li><a href="#">អនុក្រឹត្យ</a></li>
+										<li><a href="#">សារាចរ</a></li>
+										<li><a href="#">ប្រកាស</a></li>
+										<li><a href="#">សេចក្តីសម្រេច</a></li>
+										<li><a href="#">សេចក្តីជូនដំណឹង</a></li>
+										<li><a href="#">សេចក្តីណែនាំ</a></li>
+									</ul>
+								</li>
+								<li class="menu-item-has-children"><a href="#">បណ្តុំឯកសារ</a>
+									<ul class="sub-menu">
+										<li><a href="#">គោលនយោបាយ</a></li>
+										<li><a href="#">ឯកសារបណ្តុះបណ្តាល</a></li>
+										<li><a href="#">សិក្ខាសាលា</a></li>
+									</ul>
+								</li>
+								<li class="menu-item-has-children"><a href="#">ព័ត៌មាន</a>
+									<ul class="sub-menu">
+										<li><a href="#">ព័ត៌មានវិស័យ</a></li>
+										<li><a href="#">ប្រតិបត្តិករ</a></li>
+									</ul>
+								</li>
+								<li><a href="#">ទិន្នន័យមូលដ្ឋាន</a></li>
+							</ul>
+							<!-- search form -->
+							<!--div class="pull-right">
+								<form class="form-search">
+									<div class="input-group input-group-sm">
+										<div class="input-group-prepend no-bg" id="button-addon3">
+											<a href="#"><img src="src/sass/images/facebook-icon.jpg" /></a>
+											<a href="#"><img src="src/sass/images/youtube-icon.jpg" /></a>
+										</div>
+										<input type="text" class="form-control" placeholder="ស្វែងរក" />
+										<div class="input-group-prepend">
+											<button class="btn btn-outline" type="submit" id="button-addon1"><span class="oi oi-magnifying-glass"></span></button>
+										</div>
+									</div>
+								</form>	
+							</div-->
+						</nav>
+						
+					</div>
+				</div>
+				<!-- marquee html -->
+				<!-- <div class="container marquee-wrap">
+					<div id="marquee" class="marquee row primary-color">
+						<marquee behavior="scroll" direction="left" scrollamount="5" onmouseover="this.setAttribute('scrollamount',0);" onmouseout="this.setAttribute('scrollamount',5);" >
+							<ul>
+								<li><span class="oi oi-star"></span> <a href="#">​​ឯកឧត្តម​រដ្ឋមន្ត្រី​ ​ត្រាំ​ អុី​វ​តឹក​ ​អញ្ជើញ​ប្រកាស​ត​ម្លើ​ង​ឋានៈ​ ​និង​តែងតាំង​ ​រដ្ឋលេខាធិការ​ ​អនុរដ្ឋលេខាធិការ​ ​និង​ទីប្រឹក្សា​ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍​</a></li>
+								<li><span class="oi oi-star"></span> <a href="#">​​ឯកឧត្ដម​រដ្ឋមន្ត្រី​ ​ត្រាំ​ អុី​វ​តឹក​ ​អញ្ជើញ​ចែក​សញ្ញាបត្រ​ថ្នាក់​បរិញ្ញាបត្រ​ដល់​និស្សិ​ត​ជំនាន់​ទី​១​ ​របស់​វិទ្យាស្ថាន​ជាតិ​ (និ​ប​ទិ​ក​-​NIP​TIC​T​) </a></li>
+								<li><span class="oi oi-star"></span> <a href="#">​​ឯកឧត្តម​រដ្ឋមន្ត្រី​ ​ត្រាំ​ អុី​វ​តឹក​ ​ចុះ​កិច្ចព្រមព្រៀង​អនុវត្ត​គម្រោង​បំពាក់​កុំព្យូទ័រ​ ​និង​ស​ម្ភារៈ​បច្ចេកទេស​គាំទ្រ​ការ​បង្រៀន​បច្ចេកវិទ្យា​គមនាគមន៍​ ​និង​ព័ត៌មាន​នៅ​ក​ម្រិ​ត​មធ្យមសិក្សា​ទុតិយ​ភូមិ​</a></li>
+								<li><span class="oi oi-star"></span> <a href="#">​​ឯកឧត្ដម​រដ្ឋមន្ត្រី​ ​ត្រាំ​ អុីវតឹក​ ​អនុញ្ញាត​ឱ្យ​អនុប្រធាន​ជាន់ខ្ពស់​ ​របស់​ក្រុមហ៊ុន​ ​Z​T​E​ ​ចូល​ជួប​សម្តែង​ការគួរសម​ ​និង​ពិភាក្សា​ការងារ​</a></li>
+							</ul>
+						</marquee>
+					</div>
+				</div> -->
+				<!-- breadcrum -->
+				<!-- <div class="container plr-lg-30">
+					<div class="breadcrum">
+						<ul>
+							<li><a href="#">ទំព័រដើម</a></li>
+							<li><a href="#">ព័ត៌មានថ្មីៗ</a></li>
+						</ul>
+					</div>
+				</div> -->
+				<div class="container plr-lg-30">
+					<section class="">
+						<div class="form-search without-slideshow">
+							<form action="search.html" method="POST">
+								<div class="input-field input-group">
+									<input type="search" class="text-field form-control" placeholder="Search All Government" />
+									<div class="input-group-append">
+										<button type="submit" class="submit-field btn btn-primary"><span class="d-none d-md-inline">Search</span> <i class="icofont-search"></i></button>
+									</div>
+								</div>
+							</form>
+							<ul>
+								<li>
+									<label>Popular Keywords:</label>
+									<ul>
+										<li><a href="#">driver's license</a></li>
+										<li><a href="#">free health service</a></li>
+										<li><a href="#">birth registration</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</section>
+
+					<section class="">
+						<header class="block-heading text-left">
+							<h4 class="text-danger font-weight-bold">
+								Family and Children
+							</h4>
+						</header>
+					</section>
+
+					<section class="">
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb light">
+							  <li class="breadcrumb-item"><a href="#"><i class="icofont-home"></i></a></li>
+							  <li class="breadcrumb-item"><a href="#">Citizen</a></li>
+							  <li class="breadcrumb-item active">Family and Children</li>
+							</ol>
+						</nav>
+					</section>
+
+					<!-- <section class="">
+						<figure class="hero-banner">
+							<img class="d-none" src="./src/sass/images/block/bith-registration.jpg"/>
+							<div class="aspectratio-4-1">
+								<div class="img blend" style="background-image: url(./src/sass/images/block/bith-registration.jpg);"></div>
+							</div>
+							<figcaption class="hero-content d-flex">
+								<div class="my-auto">
+									<h3 class="hero-title"><strong>Registering a new baby and getting a birth certificate</strong></h3>
+									<p class="hero-description">New York State Department of Health can provide <br>copies of birth certificates for individuals born <br>outside of New York City’s five boroughs.</p>
+								</div>
+							</figcaption>
+						</figure>
+					</section> -->
+
+					<section class="service-detail">
+						<div class="d-md-flex tab-collapse">
+                    
+                
+							<div class="nav flex-column" id="tab-collapse" role="tablist" aria-orientation="vertical">
+		
+								<a class="nav-link active" id="tab-collapse-01" data-toggle="pill" href="#tab-01" role="tab" aria-controls="tab-01" aria-selected="true">
+									Getting Married
+								</a>
+								<a class="nav-link" id="tab-collapse-02" data-toggle="pill" href="#tab-02" role="tab" aria-controls="tab-02" aria-selected="false">
+									Having a Baby
+								</a>
+								<a class="nav-link" id="tab-collapse-03" data-toggle="pill" href="#tab-03" role="tab" aria-controls="tab-03" aria-selected="false">
+									Getting Divorced
+								</a>
+								<a class="nav-link" id="tab-collapse-04" data-toggle="pill" href="#tab-04" role="tab" aria-controls="tab-04" aria-selected="false">
+									Changing your name
+								</a>
+								<a class="nav-link" id="tab-collapse-05" data-toggle="pill" href="#tab-05" role="tab" aria-controls="tab-05" aria-selected="false">
+									Adoption
+								</a>
+		
+							</div>
+						
+							<div class="tab-content" id="accordion-tab-collapse">
+								
+								<div class="tab-pane fade show active" id="tab-01" role="tabpanel" aria-labelledby="tab-collapse-01">
+									<div class="collapse-title" id="heading-01">
+										<button class="btn btn-link btn-block" type="button" data-toggle="collapse" data-target="#collapse-01" aria-expanded="true" aria-controls="collapse-01">
+											Getting Married
+										</button>
+									</div>
+									<div id="collapse-01" class="collapse show" aria-labelledby="heading-01" data-parent="#accordion-tab-collapse">
+										<div class="collapse-body">
+											<div class="block-list" data-id="block-list-01">
+												
+												<article class="wrap-item">
+													<h5 class="title font-weight-bold">
+														<a href="#">How to get Married?</a>
+													</h5>
+													<div class="excerpt">
+														A complete guideline for married registration
+														- Single declaration - Married declaration -  Married registration
+													</div>
+												</article>
+												<article class="wrap-item">
+													<h5 class="title font-weight-bold">
+														<a href="#">Getting married overseas</a>
+													</h5>
+													<div class="excerpt">
+														Discover jobs that would suit you, find and apply for vacancies, and prepare for interviews.
+													</div>
+												</article>
+												<article class="wrap-item">
+													<h5 class="title font-weight-bold">
+														<a href="#">Getting married with foreigners</a>
+													</h5>
+													<div class="excerpt">
+														Discover jobs that would suit you, find and apply for vacancies, and prepare for interviews.
+													</div>
+												</article>
+												<article class="wrap-item">
+													<h5 class="title font-weight-bold">
+														<a href="#">Find a registry office</a>
+													</h5>
+													<div class="excerpt">
+														Discover jobs that would suit you, find and apply for vacancies, and prepare for interviews.
+													</div>
+												</article>
+												<article class="wrap-item">
+													<h5 class="title font-weight-bold">
+														<a href="#">Get a married certificate</a>
+													</h5>
+													<div class="excerpt">
+														Discover jobs that would suit you, find and apply for vacancies, and prepare for interviews.
+													</div>
+												</article>
+												<article class="wrap-item">
+													<h5 class="title font-weight-bold">
+														<a href="#">Submit a notice of objection to someone's wedding</a>
+													</h5>
+													<div class="excerpt">
+														Discover jobs that would suit you, find and apply for vacancies, and prepare for interviews.
+													</div>
+												</article>
+		
+											</div>
+										</div>
+									</div>
+								</div>
+			
+								<div class="tab-pane fade" id="tab-02" role="tabpanel" aria-labelledby="tab-collapse-02">
+									<div class="collapse-title" id="heading-02">
+										<button class="btn btn-link btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapse-02" aria-expanded="false" aria-controls="collapse-02">
+											Having a Baby
+										</button>
+									</div>
+									<div id="collapse-02" class="collapse" aria-labelledby="heading-02" data-parent="#accordion-tab-collapse">
+										<div class="collapse-body">
+											<div class="block-list" data-id="block-list-01">
+												
+												<article class="wrap-item">
+													<h5 class="title font-weight-bold">
+														<a href="#">How to get Married?</a>
+													</h5>
+													<div class="excerpt">
+														A complete guideline for married registration
+														- Single declaration - Married declaration -  Married registration
+													</div>
+												</article>
+												<article class="wrap-item">
+													<h5 class="title font-weight-bold">
+														<a href="#">Getting married overseas</a>
+													</h5>
+													<div class="excerpt">
+														Discover jobs that would suit you, find and apply for vacancies, and prepare for interviews.
+													</div>
+												</article>
+												<article class="wrap-item">
+													<h5 class="title font-weight-bold">
+														<a href="#">Getting married with foreigners</a>
+													</h5>
+													<div class="excerpt">
+														Discover jobs that would suit you, find and apply for vacancies, and prepare for interviews.
+													</div>
+												</article>
+												<article class="wrap-item">
+													<h5 class="title font-weight-bold">
+														<a href="#">Find a registry office</a>
+													</h5>
+													<div class="excerpt">
+														Discover jobs that would suit you, find and apply for vacancies, and prepare for interviews.
+													</div>
+												</article>
+												<article class="wrap-item">
+													<h5 class="title font-weight-bold">
+														<a href="#">Get a married certificate</a>
+													</h5>
+													<div class="excerpt">
+														Discover jobs that would suit you, find and apply for vacancies, and prepare for interviews.
+													</div>
+												</article>
+												<article class="wrap-item">
+													<h5 class="title font-weight-bold">
+														<a href="#">Submit a notice of objection to someone's wedding</a>
+													</h5>
+													<div class="excerpt">
+														Discover jobs that would suit you, find and apply for vacancies, and prepare for interviews.
+													</div>
+												</article>
+		
+											</div>
+										</div>
+									</div>
+								</div>
+			
+								<div class="tab-pane fade" id="tab-03" role="tabpanel" aria-labelledby="tab-collapse-03">
+									<div class="collapse-title" id="heading-03">
+										<button class="btn btn-link btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapse-03" aria-expanded="false" aria-controls="collapse-03">
+											Getting Divorced
+										</button>
+									</div>
+									<div id="collapse-03" class="collapse" aria-labelledby="heading-03" data-parent="#accordion-tab-collapse">
+										<div class="collapse-body">
+											<div class="block-list" data-id="block-list-01">
+												
+												<article class="wrap-item">
+													<h5 class="title font-weight-bold">
+														<a href="#">How to get Married?</a>
+													</h5>
+													<div class="excerpt">
+														A complete guideline for married registration
+														- Single declaration - Married declaration -  Married registration
+													</div>
+												</article>
+												<article class="wrap-item">
+													<h5 class="title font-weight-bold">
+														<a href="#">Getting married overseas</a>
+													</h5>
+													<div class="excerpt">
+														Discover jobs that would suit you, find and apply for vacancies, and prepare for interviews.
+													</div>
+												</article>
+												<article class="wrap-item">
+													<h5 class="title font-weight-bold">
+														<a href="#">Getting married with foreigners</a>
+													</h5>
+													<div class="excerpt">
+														Discover jobs that would suit you, find and apply for vacancies, and prepare for interviews.
+													</div>
+												</article>
+												<article class="wrap-item">
+													<h5 class="title font-weight-bold">
+														<a href="#">Find a registry office</a>
+													</h5>
+													<div class="excerpt">
+														Discover jobs that would suit you, find and apply for vacancies, and prepare for interviews.
+													</div>
+												</article>
+												<article class="wrap-item">
+													<h5 class="title font-weight-bold">
+														<a href="#">Get a married certificate</a>
+													</h5>
+													<div class="excerpt">
+														Discover jobs that would suit you, find and apply for vacancies, and prepare for interviews.
+													</div>
+												</article>
+												<article class="wrap-item">
+													<h5 class="title font-weight-bold">
+														<a href="#">Submit a notice of objection to someone's wedding</a>
+													</h5>
+													<div class="excerpt">
+														Discover jobs that would suit you, find and apply for vacancies, and prepare for interviews.
+													</div>
+												</article>
+		
+											</div>
+										</div>
+									</div>
+								</div>
+		
+								<div class="tab-pane fade" id="tab-04" role="tabpanel" aria-labelledby="tab-collapse-04">
+									<div class="collapse-title" id="heading-04">
+										<button class="btn btn-link btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapse-04" aria-expanded="false" aria-controls="collapse-04">
+											Changing your name
+										</button>
+									</div>
+									<div id="collapse-04" class="collapse" aria-labelledby="heading-04" data-parent="#accordion-tab-collapse">
+										<div class="collapse-body">
+											<div class="block-list" data-id="block-list-01">
+												
+												<article class="wrap-item">
+													<h5 class="title font-weight-bold">
+														<a href="#">How to get Married?</a>
+													</h5>
+													<div class="excerpt">
+														A complete guideline for married registration
+														- Single declaration - Married declaration -  Married registration
+													</div>
+												</article>
+												<article class="wrap-item">
+													<h5 class="title font-weight-bold">
+														<a href="#">Getting married overseas</a>
+													</h5>
+													<div class="excerpt">
+														Discover jobs that would suit you, find and apply for vacancies, and prepare for interviews.
+													</div>
+												</article>
+												<article class="wrap-item">
+													<h5 class="title font-weight-bold">
+														<a href="#">Getting married with foreigners</a>
+													</h5>
+													<div class="excerpt">
+														Discover jobs that would suit you, find and apply for vacancies, and prepare for interviews.
+													</div>
+												</article>
+												<article class="wrap-item">
+													<h5 class="title font-weight-bold">
+														<a href="#">Find a registry office</a>
+													</h5>
+													<div class="excerpt">
+														Discover jobs that would suit you, find and apply for vacancies, and prepare for interviews.
+													</div>
+												</article>
+												<article class="wrap-item">
+													<h5 class="title font-weight-bold">
+														<a href="#">Get a married certificate</a>
+													</h5>
+													<div class="excerpt">
+														Discover jobs that would suit you, find and apply for vacancies, and prepare for interviews.
+													</div>
+												</article>
+												<article class="wrap-item">
+													<h5 class="title font-weight-bold">
+														<a href="#">Submit a notice of objection to someone's wedding</a>
+													</h5>
+													<div class="excerpt">
+														Discover jobs that would suit you, find and apply for vacancies, and prepare for interviews.
+													</div>
+												</article>
+		
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="tab-pane fade" id="tab-05" role="tabpanel" aria-labelledby="tab-collapse-05">
+									<div class="collapse-title" id="heading-05">
+										<button class="btn btn-link btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapse-05" aria-expanded="false" aria-controls="collapse-05">
+											Adoption
+										</button>
+									</div>
+									<div id="collapse-05" class="collapse" aria-labelledby="heading-05" data-parent="#accordion-tab-collapse">
+										<div class="collapse-body">
+											<div class="block-list" data-id="block-list-01">
+												
+												<article class="wrap-item">
+													<h5 class="title font-weight-bold">
+														<a href="#">How to get Married?</a>
+													</h5>
+													<div class="excerpt">
+														A complete guideline for married registration
+														- Single declaration - Married declaration -  Married registration
+													</div>
+												</article>
+												<article class="wrap-item">
+													<h5 class="title font-weight-bold">
+														<a href="#">Getting married overseas</a>
+													</h5>
+													<div class="excerpt">
+														Discover jobs that would suit you, find and apply for vacancies, and prepare for interviews.
+													</div>
+												</article>
+												<article class="wrap-item">
+													<h5 class="title font-weight-bold">
+														<a href="#">Getting married with foreigners</a>
+													</h5>
+													<div class="excerpt">
+														Discover jobs that would suit you, find and apply for vacancies, and prepare for interviews.
+													</div>
+												</article>
+												<article class="wrap-item">
+													<h5 class="title font-weight-bold">
+														<a href="#">Find a registry office</a>
+													</h5>
+													<div class="excerpt">
+														Discover jobs that would suit you, find and apply for vacancies, and prepare for interviews.
+													</div>
+												</article>
+												<article class="wrap-item">
+													<h5 class="title font-weight-bold">
+														<a href="#">Get a married certificate</a>
+													</h5>
+													<div class="excerpt">
+														Discover jobs that would suit you, find and apply for vacancies, and prepare for interviews.
+													</div>
+												</article>
+												<article class="wrap-item">
+													<h5 class="title font-weight-bold">
+														<a href="#">Submit a notice of objection to someone's wedding</a>
+													</h5>
+													<div class="excerpt">
+														Discover jobs that would suit you, find and apply for vacancies, and prepare for interviews.
+													</div>
+												</article>
+		
+											</div>
+										</div>
+									</div>
+								</div>
+			
+							</div>
+						
+						
+					</div>
+			
+						<!-- <div class="row tab-collapse">
+								
+							<div class="col-sm-3">
+								<div class="nav">
+									<div class="nav-link title">Having a baby</div>
+								</div>
+			
+								<div class="nav flex-column" id="tab-collapse" role="tablist" aria-orientation="vertical">
+									<a class="nav-link active" id="tab-collapse-01" data-toggle="pill" href="#tab-01" role="tab" aria-controls="v-pills-home" aria-selected="true">Overview</a>
+									<a class="nav-link" id="tab-collapse-02" data-toggle="pill" href="#tab-02" role="tab" aria-controls="v-pills-profile" aria-selected="false">Guidance</a>
+									<a class="nav-link" id="tab-collapse-03" data-toggle="pill" href="#tab-03" role="tab" aria-controls="v-pills-messages" aria-selected="false">How To</a>
+								</div>
+							</div>
+							
+							<div class="col-sm-9">
+								<div class="tab-content" id="accordion-tab-collapse">
+									<div class="tab-pane fade show active" id="tab-01" role="tabpanel" aria-labelledby="tab-collapse-01">
+										<div class="collapse-title" id="heading-01">
+											<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-01" aria-expanded="true" aria-controls="collapse-01">
+												Overview
+											</button>
+										</div>
+										<div id="collapse-01" class="collapse show" aria-labelledby="heading-01" data-parent="#accordion-tab-collapse">
+											<div class="collapse-body">
+												Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+											</div>
+										</div>
+									</div>
+				
+									<div class="tab-pane fade" id="tab-02" role="tabpanel" aria-labelledby="tab-collapse-02">
+										<div class="collapse-title" id="heading-02">
+											<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-02" aria-expanded="false" aria-controls="collapse-02">
+												Guidance
+											</button>
+										</div>
+										<div id="collapse-02" class="collapse" aria-labelledby="heading-02" data-parent="#accordion-tab-collapse">
+											<div class="collapse-body">
+												Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+											</div>
+										</div>
+									</div>
+				
+									<div class="tab-pane fade" id="tab-03" role="tabpanel" aria-labelledby="tab-collapse-03">
+										<div class="collapse-title" id="heading-03">
+											<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-03" aria-expanded="false" aria-controls="collapse-03">
+												How To
+											</button>
+										</div>
+										<div id="collapse-03" class="collapse" aria-labelledby="heading-03" data-parent="#accordion-tab-collapse">
+											<div class="collapse-body">
+												Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+											</div>
+										</div>
+									</div>
+				
+								</div>
+							</div>
+							
+							
+						</div> -->
+					</section>
+
+	
+				
+					
+				</div>
+				<!-- footer -->
+				<footer class="footer">
+					<div id="servay" class="servay container p-0" data='{"type":"post", "id":168, "auth": "c4ca4238a0b923820dcc509a6f75849b"}'>
+						<div id="servay-useful" class="useful">
+							<ul >
+								<li>
+									Is this page useful?
+								</li>
+								<li>
+									<a onclick="servay.useful(1)" href="javascript:void(0);">Yes</a>
+								</li>
+								<li>
+									<a onclick="servay.useful(0)" href="javascript:void(0);">No</a>
+								</li>  
+							</ul>
+						</div>
+			
+						<div id="servay-submit" class="submit p-3">
+							<form>
+								<label for="servay-feedback">Tell us what we can do to improve the article</label>
+								<textarea class="form-control mb-3 rounded-0" id="servay-feedback" placeholder=""></textarea>
+								<button onclick="servay.submit(this.previousElementSibling.value)" type="button" class="btn btn-light rounded-0">Submit</button>
+							</form>
+						</div>
+			
+						<div id="servay-thank" class="thank">
+							<div class="alert fade show m-0" role="alert">
+								<strong>Thanks!</strong> Your feedback will help us improve the support experience.
+								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="feedback d-none d-sm-block">
+						<div class="dialog-action">
+							<button class="btn btn-sm btn-primary rounded-0" data-toggle="modal" data-target="#feedback-modal-center">Site Feedback</button>
+						</div>
+						<!-- Modal -->
+						<div class="modal fade" id="feedback-modal-center" tabindex="-1" role="dialog" aria-labelledby="feedback-modal-center-title" aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<img src="./assets/images/fav-32.png" class="mr-2" alt="">
+										<h5 class="modal-title" id="feedback-modal-center-title">ក្រសួងប្រៃសណីយ៍
+											និងទូរគមនាគមន៍</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body feedback-body">
+										<form id="feedback-form" action="" method="GET">
+											<div class="">
+												<article id="article-1" class="active">
+													<h5>How satisfied are you with the Cambodia Support website?</h5>
+													<input type="range" step="1" value="0" name="star-rating" id="star-rating" />
+													<div class="star text-center" data-reference="star-rating" data-star="5" data-font="&#9733;"></div>
+													<div class="d-flex justify-content-around mb-4" for="feedback-range"><small>Very Dissatisfied</small><small>Very Satisfied</small></div>
+													<div class="text-center mb-3">
+														<a onClick="feedback.tabCheckStar(this)" href="javascript:void(0)" data-current="article-1" data-next="article-2" class="btn btn-primary px-3">OK</a>
+														<div class="invalid-feedback">Please provide a valid star.</div>
+													</div>
+													<small>Step 1 of 3</small>
+												</article>
+												<article id="article-2" class="hide">
+													<h5>Is there anything we can do to improve? Let us know!</h5>
+													<textarea name="textarea" class="form-control mb-4" id="exampleFormControlTextarea1" rows="3" maxlength="1000" placeholder="Type your feedback here (1000 chars max)"></textarea>
+													<div class="text-center mb-3">
+														<a onClick="feedback.tabUncheck(this)" href="javascript:void(0)" data-current="article-2" data-next="article-3" class="btn btn-primary px-3">OK</a>
+													</div>
+													<small>Step 2 of 3</small>
+												</article>
+												<article id="article-3" class="hide">
+													<h5>Did you find the information you were looking for?</h5>
+													<div class="d-flex justify-content-around mb-4 w-50 mx-auto">
+														<div class="custom-control custom-radio">
+															<input type="radio" class="custom-control-input" id="information_radio_stacked-1" name="information_radio_stacked">
+															<label class="custom-control-label" for="information_radio_stacked-1">YES</label>
+														</div>
+														<div class="custom-control custom-radio">
+															<input type="radio" class="custom-control-input" id="information_radio_stacked-2" name="information_radio_stacked">
+															<label class="custom-control-label" for="information_radio_stacked-2">NO</label>
+														</div>
+													</div>
+													<div class="text-center mb-3">
+														<button onClick="feedback.submit(this)" href="javascript:void(0)" data-validation='{"type":"require","input_name":"information_radio_stacked"}' data-current="article-3" data-next="article-4" type="button" class="btn btn-primary px-3">SUBMIT</button>
+														<div class="invalid-feedback">Please provide a valid information.</div>
+													</div>
+													<small>Step 3 of 3</small>
+												</article>
+												<article id="article-4" class="hide">
+													<span class="text-center d-block mb-3">
+														Thanks for taking this survey. Your participation is helpful to us and we take your feedback seriously.
+													</span>
+													<div class="text-center mb-3">
+														<button data-dismiss="modal" type="button" class="btn btn-secondary px-3">close</button>
+													</div>
+												</article>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="container primary-background-color plr-lg-30 plr-md-30">
+						<div class="row">
+							<div class="col-md-6">
+								<h4 class="font-moul footer-brand">ក្រសួងប្រៃសណីយ៍ និងទូរគមនាគមន៍</h4>
+								<p>MINISTRY OF POSTS AND TELECOMMUNICATIONS</p>
+								<p>អាសយដ្ឋាន​ : អាគារលេខ១៣ មហាវិថីព្រះមុនីវង្ស(៩៣) រាជធានីភ្នំពេញ</p>
+								<p>ទូរស័ព្ទ : (+៨៥៥) ២៣ ៧២៤ ៨០៩ / ៤២៨ ២៤៦</p>
+								<p>អ៊ីមែល : info@mptc.gov.kh</p>
+								<p>លេខទូរស័ព្ទ: 033932894</p>
+								<div class="footer-social">
+									<a href="#">
+										<img src="src/sass/images/facebook-icon.jpg" />
+									</a>
+									<a href="#">
+										<img src="src/sass/images/youtube-icon.jpg" />
+									</a>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d821.6966538424008!2d104.91656952604058!3d11.575530662004928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31095142eadcf8db%3A0xbd4e32a5eccddfb7!2z4Z6A4Z-S4Z6a4Z6f4Z694Z6E4Z6U4Z-S4Z6a4Z-D4Z6f4Z6O4Z644Z6Z4Z-NIOGek-Get-GehOGekeGevOGemuGeguGemOGek-GetuGeguGemOGek-GfjQ!5e0!3m2!1sen!2skh!4v1549360611328" width="100%" height="270" frameborder="0" style="border:0" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+					<div class="container primary-background-color">
+						<div class="row">
+							<div class="col-12 copy-right">ឆ្នាំ២០១៥ © រក្សាសិទ្ធិគ្រប់យ៉ាងដោយ៖ ក្រសួងប្រៃសណីយ៍ និង ទូរគមនាគមន៍ | អភិវឌ្ឍដោយ អគ្គនាយកដ្ឌានបច្ចេកវិទ្យា គមនាគមន៍ និងព័ត៌មាន</div>
+						</div>
+					</div>
+				</footer>
+				<!-- responsive switcher -->
+				<div class="container text-center switch">
+					<div class="btn-group btn-group-toggle" data-toggle="buttons">
+						<!-- if set default mode from option to mobile -->
+						<label class="btn btn-secondary btn-sm active" id="mobile-mode">
+							<input type="radio" name="options" autocomplete="off"><span class="oi oi-phone"></span> Mobile Mode
+						</label>
+						<label class="btn btn-secondary btn-sm" id="desktop-mode">
+							<input type="radio" name="options" autocomplete="off"><span class="oi oi-monitor"></span> Desktop Mode
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Load main JavaScript -->
+		<script type="text/javascript" src="dist/main.js"></script>
+	</body>
+</html>

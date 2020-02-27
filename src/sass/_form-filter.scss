@@ -1,0 +1,35 @@
+.form-filter {
+    label {
+        color: $gray-600;
+    }
+    .select {
+        background-color: $gray-default;
+        select {
+            color: $gray-600;
+            border: none;
+            border-radius: 0px;
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .form-filter {
+        label {
+            font-size: 16px;
+        }
+    }
+}
+@include media-breakpoint-only(md) {
+    .form-filter {
+        label {
+            font-size: 20px;
+        }
+    }
+}
+@include media-breakpoint-up(lg) {
+    .form-filter {
+        label {
+            font-size: 24px;
+        }
+    }
+}

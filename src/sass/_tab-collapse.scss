@@ -1,0 +1,83 @@
+.tab-collapse {
+    margin-bottom: 30px;
+    .nav {
+        background-color: $gray-default;
+        margin-right: 30px;
+        .nav-link {
+            padding: 15px 15px 15px 30px;
+            font-size: 15px;
+            border-bottom: 1px solid $gray-200;
+            display: block;
+            white-space: nowrap;
+        }
+        .nav-link.title {
+            color: #f00;
+            font-weight: bold;
+            font-size: 16px;
+            width: 100%;
+        }
+        .nav-link.active {
+            background-color: #ffffff;
+            border-left: 5px solid #f00;
+            border-bottom: 0px;
+            padding-left: 25px;
+        }
+    }
+}
+
+
+@include media-breakpoint-down(sm) {
+    .tab-collapse {
+        .nav {
+            display: none;
+        }
+        .tab-content {
+            .tab-pane {
+                display: block;
+                opacity: 1;
+                border: 1px solid $gray-200;
+                margin-bottom: 5px;
+                padding: 15px;
+                .collapse-title {
+                    margin: -15px;
+                    button {
+                        display: block;
+                        text-align: left;
+                        background-color: #ffffff;
+                        padding: 15px 15px 15px 10px;
+                        border: 0px;
+                        border-radius: 0px;
+                        border-left: 5px solid #f00;
+                    }
+                    button.collapsed {
+                        
+                        background-color: $gray-default;
+                        border-left: 0px;
+                        padding: 15px;
+                    }
+                }
+                .collapse,
+                .collapsing {
+                    .collapse-body {
+                        padding-top: 30px;
+
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-up(md) {
+    .tab-collapse {
+        .tab-content {
+            .collapse-title {
+                display: none;
+            }
+            .collapse {
+                display: block;
+            }
+        }
+        
+    }
+}
