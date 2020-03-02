@@ -1,0 +1,31 @@
+.breadcrumb.light {
+    background-color: #ffffff;
+    padding: 0px;
+    * {
+        color: $blue;
+    }
+    .breadcrumb-item.active {
+        color: $gray-600;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .breadcrumb.light {
+        margin-bottom: 15px;
+        * {
+            font-size: 14px;
+        }
+    }
+}
+
+@include media-breakpoint-only(md) {
+    .breadcrumb.light {
+        margin-bottom: 20px;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .breadcrumb.light {
+        margin-bottom: 30px;
+    }
+}

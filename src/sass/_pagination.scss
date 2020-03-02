@@ -1,0 +1,12 @@
+.pagination.light {
+    display: block;
+    .nav-links {
+        .page-numbers {
+            padding: 10px;
+            display: inline-block;
+        }
+        .current {
+            border: 1px solid $gray-200;
+        }
+    }
+}

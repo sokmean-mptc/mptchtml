@@ -1,0 +1,32 @@
+.block-heading {
+    * {
+        color: $blue;
+    }
+}
+
+
+
+@include media-breakpoint-down(sm) {
+    .block-heading {
+        margin-bottom: 15px;
+        * {
+            font-size: 16px;
+        }
+    }
+}
+@include media-breakpoint-only(md) {
+    .block-heading {
+        margin-bottom: 20px;
+        * {
+            font-size: 22px;
+        }
+    }
+}
+@include media-breakpoint-up(lg) {
+    .block-heading {
+        margin-bottom: 30px;
+        * {
+            font-size: 25px;
+        }
+    }
+}
