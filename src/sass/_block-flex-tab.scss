@@ -1,0 +1,102 @@
+$border-color: #F5F6FA;
+.block-flex-tab.lg {
+    padding-bottom: 30px;
+    > ul {
+        > li {
+            border-left: 1px solid;
+            border-bottom: 1px solid;
+            border-color: $border-color;
+            color: $blue;
+            h5 {
+                font-size: 22px;
+                padding: 15px;
+                margin: 0px;
+                text-align: center;
+                border-bottom: 1px solid;
+                border-color: $border-color;
+                background-color: $border-color;
+                i {
+                    font-size: 27px;
+                    display: block;
+                }
+            }
+            > ul {
+                margin: 20px;
+                
+            }
+        }
+        > li:last-child {
+            border-right: 1px solid;
+            border-color: $border-color;
+        }
+    }
+    ul {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        li {
+            ul {
+                li {
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                    a {
+                        color: $gray-900;
+                    }
+                    i {
+                        color: $gray-900;
+                        margin: auto 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+.block-flex-tab.md {
+    > ul {
+        > li {
+            a {
+                font-size: 9px;
+                color: $gray-500;
+                background-color: $border-color;
+                i {
+                    font-size: 27px;
+                    display: block;
+                }
+            }
+            a.active {
+                color: $blue;
+            }
+        }
+    }
+    .tab-content {
+        .tab-pane {
+            ul {
+                padding: 0px;
+                margin: 0px;
+                li {
+                    border-bottom: 1px solid $border-color;
+                    padding: 0px 15px;
+                    a {
+                        font-size: 16px;
+                        color: $gray-700;
+                        padding: 13px 0px;
+                    }
+                    i {
+                        color: $gray-700;
+                        margin: auto 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-down(sm) {
+    .block-flex-tab.md {
+        padding-bottom: 15px;
+    }
+}
+@include media-breakpoint-only(md) {
+    .block-flex-tab.md {
+        padding-bottom: 20px;
+    }
+}

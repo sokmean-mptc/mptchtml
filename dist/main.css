@@ -19591,6 +19591,75 @@ html.non-responsive {
   .tab-collapse .tab-content .collapse {
     display: block; } }
 
+.block-flex-tab.lg {
+  padding-bottom: 30px; }
+  .block-flex-tab.lg > ul > li {
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+    border-color: #F5F6FA;
+    color: #1d75af; }
+    .block-flex-tab.lg > ul > li h5 {
+      font-size: 22px;
+      padding: 15px;
+      margin: 0px;
+      text-align: center;
+      border-bottom: 1px solid;
+      border-color: #F5F6FA;
+      background-color: #F5F6FA; }
+      .block-flex-tab.lg > ul > li h5 i {
+        font-size: 27px;
+        display: block; }
+    .block-flex-tab.lg > ul > li > ul {
+      margin: 20px; }
+  .block-flex-tab.lg > ul > li:last-child {
+    border-right: 1px solid;
+    border-color: #F5F6FA; }
+  .block-flex-tab.lg ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none; }
+    .block-flex-tab.lg ul li ul li {
+      font-size: 16px;
+      margin-bottom: 20px; }
+      .block-flex-tab.lg ul li ul li a {
+        color: #212529; }
+      .block-flex-tab.lg ul li ul li i {
+        color: #212529;
+        margin: auto 0px; }
+
+.block-flex-tab.md > ul > li a {
+  font-size: 9px;
+  color: #adb5bd;
+  background-color: #F5F6FA; }
+  .block-flex-tab.md > ul > li a i {
+    font-size: 27px;
+    display: block; }
+
+.block-flex-tab.md > ul > li a.active {
+  color: #1d75af; }
+
+.block-flex-tab.md .tab-content .tab-pane ul {
+  padding: 0px;
+  margin: 0px; }
+  .block-flex-tab.md .tab-content .tab-pane ul li {
+    border-bottom: 1px solid #F5F6FA;
+    padding: 0px 15px; }
+    .block-flex-tab.md .tab-content .tab-pane ul li a {
+      font-size: 16px;
+      color: #495057;
+      padding: 13px 0px; }
+    .block-flex-tab.md .tab-content .tab-pane ul li i {
+      color: #495057;
+      margin: auto 0px; }
+
+@media (max-width: 767.98px) {
+  .block-flex-tab.md {
+    padding-bottom: 15px; } }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .block-flex-tab.md {
+    padding-bottom: 20px; } }
+
 footer .social {
   margin: 0; }
   footer .social li {
