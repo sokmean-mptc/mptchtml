@@ -9837,7 +9837,7 @@ html.responsive body, html.responsive {
   background-color: #fff; }
 
 .block-title {
-  border-bottom-width: 2px;
+  /*border-bottom-width: 2px; */
   border-bottom-style: solid;
   margin-bottom: 30px; }
 
@@ -9850,9 +9850,9 @@ html.responsive body, html.responsive {
   padding: 10px 20px; }
 
 .block-title2 {
-  border-bottom-width: 2px;
-  border-bottom-style: solid;
-  margin-bottom: 30px; }
+  /*border-bottom-width: 2px;   border-bottom-style: solid; */
+  margin-bottom: 15px;
+  padding-top: 10px; }
 
 .block-title2 a, .block-title2 span {
   line-height: 28px;
@@ -9860,7 +9860,7 @@ html.responsive body, html.responsive {
   font-size: 20px;
   text-decoration: none;
   padding: 10px 0px;
-  border-bottom: 2px solid;
+  /* border-bottom: 2px solid; */
   font-weight: bold; }
 
 .block-title3 {
@@ -9895,10 +9895,11 @@ html.responsive body, html.responsive {
 .avatar {
   width: 100%; }
 
+.mt-5p {
+  margin-top: 5px; }
+
 /* block 1 */
 .b-1 .b-item {
-  border: 1px solid #ccc;
-  padding: 30px;
   margin-bottom: 30px; }
 
 .b-1 .b-thumnail {
@@ -9934,12 +9935,12 @@ html.responsive body, html.responsive {
 
 .b-2.bordered {
   border: 1px solid #ccc;
-  padding: 30px 30px 0px 30px;
+  padding: 20px 20px 0px 20px;
   margin-bottom: 30px; }
 
 .b-2 .b-item-wrap {
   border-bottom: 1px solid #ccc;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   padding: 0px;
   list-style: none; }
 
@@ -9971,7 +9972,7 @@ html.responsive body, html.responsive {
   top: -6.5%; }
 
 .b-2 .b-title {
-  margin-bottom: 30px; }
+  margin-bottom: 10px; }
 
 .b-2 .b-title.font-weight-normal {
   font-weight: normal; }
@@ -9979,18 +9980,15 @@ html.responsive body, html.responsive {
 .b-2 .b-title, .b-2 .b-title a {
   font-size: 16px;
   color: #353535;
-  line-height: 25px;
+  line-height: 30px;
   word-wrap: break-word;
   word-break: break-all; }
-
-.b-2 .b-title, .b-2 .b-title span {
-  margin-right: 15px; }
 
 .b-2 .b-date {
   font-size: 13px;
   color: #828282;
-  border-top: 1px solid #eee;
-  padding-top: 30px;
+  /*border-top: 1px solid #eee; */
+  padding-top: 15px;
   margin-bottom: 30px; }
 
 .b-2 .b-date span, .b-2 .b-date a {
@@ -10014,7 +10012,11 @@ html.responsive body, html.responsive {
   color: #828282; }
 
 .b-2 .b-cat {
-  margin-bottom: 30px; }
+  margin-bottom: 15px; }
+
+.b-2 .b-cat i {
+  font-size: 15px;
+  margin-right: 3px; }
 
 .b-2 .b-cat span, .b-2 .b-cat a {
   font-size: 12px;
@@ -10034,7 +10036,7 @@ html.responsive body, html.responsive {
 
 /* block 3 */
 .b-3 .b-item-wrap {
-  border-bottom: 1px solid #ccc;
+  /* border-bottom: 1px solid #ccc; */
   margin-bottom: 30px; }
 
 .b-3 .b-date-wrap {
@@ -10837,6 +10839,7 @@ html.responsive body, html.responsive {
 .slick-slideshow ul.slick-dots {
   margin: 0px;
   padding: 0px;
+  padding-right: 20px;
   list-style: none;
   position: absolute;
   bottom: 0px;
@@ -10867,7 +10870,7 @@ html.responsive body, html.responsive {
   display: -ms-flexbox;
   display: flex;
   margin: 0px;
-  padding: 0px 0px 30px 0px; }
+  /* padding: 0px 0px 30px 0px; */ }
 
 .tab-collapse li {
   list-style: none; }
@@ -10924,6 +10927,8 @@ html.responsive body, html.responsive {
   display: block; }
 
 .tab-collapse > li > a {
+  border: none !important;
+  border-radius: 0 !important;
   text-decoration: none;
   font-weight: bold;
   background: #eee;
@@ -10937,6 +10942,23 @@ html.responsive body, html.responsive {
 
 .tab-collapse > li > ul > li {
   display: none; }
+
+.tab-collapse > li a .tab-collapse > li a.active:before {
+  display: block;
+  content: '';
+  left: calc( 50% - 10px);
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid;
+  bottom: -10px; }
+
+.tab-collapse > li > a.active {
+  background-color: #eee !important;
+  border: none !important;
+  border-bottom: 1px solid #2082c3 !important; }
 
 .tab-collapse > li > ul {
   margin: 0px;
@@ -10961,7 +10983,11 @@ html.responsive body, html.responsive {
   padding: 15px 15px 15px 0px;
   word-wrap: break-word;
   line-height: 32px;
-  display: inline-block; }
+  display: inline-block;
+  padding: 10px;
+  display: block;
+  background: #eee;
+  font-weight: bold; }
 
 .tab-collapse > li > ul.tab-s-1 li span.count {
   color: #333;
@@ -10972,6 +10998,76 @@ html.responsive body, html.responsive {
   width: 32px;
   display: inline-block;
   margin-right: 10px; }
+
+.tab-collapse .nav-collapse {
+  margin-right: 0 !important; }
+
+.tab-collapse .nav-collapse a {
+  -webkit-flex-basis: 0;
+      -ms-flex-preferred-size: 0;
+          flex-basis: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: center;
+  position: relative;
+  font-size: 16px;
+  line-height: 27px;
+  display: block;
+  padding: 10px;
+  background: #eee;
+  font-weight: bold;
+  border-bottom: 1px solid #eee; }
+
+.tab-collapse .nav-collapse a.active {
+  border-bottom: 1px solid; }
+
+.tab-collapse .nav-collapse a.active:before {
+  display: block;
+  content: '';
+  left: calc( 50% - 10px);
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid;
+  bottom: -10px; }
+
+.tab-collapse .tab-content .collapse {
+  padding: 30px; }
+
+.tab-collapse .tab-content .tab-pane {
+  padding: 0 !important;
+  margin-bottom: 0 !important; }
+
+.tab-collapse .tab-content .tab-pane .collapse-title {
+  margin: 0 !important; }
+
+.tab-collapse .tab-content .tab-pane .collapse-title button {
+  color: #2082c3;
+  border: none !important;
+  background: #eee !important;
+  text-align: center !important;
+  font-weight: bold;
+  position: relative; }
+
+.tab-collapse .tab-content .tab-pane .collapse-title button:before {
+  display: block;
+  content: '';
+  left: calc( 50% - 10px);
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid;
+  bottom: -10px;
+  color: #2082c3; }
+
+.tab-collapse .tab-content .tab-pane .collapse-title button.collapsed::before {
+  content: none; }
 
 /* switch option responsive mode */
 .switch .btn-group {
@@ -11587,6 +11683,13 @@ html.non-responsive {
     line-height: 25px; }
   .responsive .slick-slideshow ul.slick-dots {
     display: none !important; }
+  .responsive .b-news {
+    background: none; }
+  .responsive .b-news .col-lg-8 .col-lg-6, .responsive .b-news [class*=col-] .col-lg-12 {
+    background: #fff;
+    margin-bottom: 5px; }
+  .responsive .b-news .col-lg-4 {
+    background: #fff; }
   .nav-button {
     padding: 15px; }
   .nav-icon {
@@ -19700,7 +19803,7 @@ footer .copyright {
       margin-right: 10px;
       text-align: center; }
       footer .footer-nabar li a {
-        font-size: 14px; }
+        font-size: 11px; }
   footer .copyright {
     font-size: 12px;
     padding: 14px; } }

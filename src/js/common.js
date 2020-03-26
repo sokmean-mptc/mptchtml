@@ -88,23 +88,7 @@ jQuery(document).ready(function() {
         prevArrow: '<div class="slick-arrow slick-prev"><span class="oi oi-chevron-left"></span></div>'
     });
     
-    // tab collapse
-    jQuery(".tab-collapse > li > ul").hide();
-    jQuery(".tab-collapse > li.active > ul").show(); 
-    jQuery(".tab-collapse > li > a").click(function () {
-        if ( jQuery(this).parent("li").hasClass("active") ){
-            return false;
-        }
-        
-        // if your want to maintain the height
-        //height = jQuery(this).closest(".tab-collapse").height();
-        //$('.tab-collapse').css('min-height', height);
-        jQuery(this).closest(".tab-collapse").children("li").children("ul").slideUp("slow"); 
-        jQuery(this).closest(".tab-collapse").children("li").removeClass("active");
-        jQuery(this).parent("li").addClass("active");
-        jQuery(this).parent("li").children("ul").slideToggle("slow");
-        return false;
-    });
+    
     
     // hot for 1 day
     var hot = 1;
