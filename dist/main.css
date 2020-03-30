@@ -10783,9 +10783,6 @@ html.responsive body, html.responsive {
   height: 30px; }
 
 /* slick slideshow */
-.slideshow {
-  padding-bottom: 30px; }
-
 .slick-slideshow .slick-arrow {
   position: absolute;
   z-index: 1;
