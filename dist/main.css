@@ -11691,7 +11691,7 @@ html.non-responsive {
     background: none; }
   .responsive .b-news .col-lg-8 .col-lg-6, .responsive .b-news [class*=col-] .col-lg-12 {
     background: #fff;
-    margin-bottom: 5px; }
+    margin-bottom: 10px; }
   .responsive .b-news .col-lg-4 {
     background: #fff; }
   .nav-button {
