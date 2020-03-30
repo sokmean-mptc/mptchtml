@@ -55,9 +55,12 @@ $border-color: #F5F6FA;
     > ul {
         > li {
             a {
-                font-size: 9px;
+                font-size: 12px;
                 color: $gray-500;
                 background-color: $border-color;
+                @media (min-width: 768px) and (max-width: 991px) {
+                    font-size: 16px;
+                }
                 i {
                     font-size: 27px;
                     display: block;

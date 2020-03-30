@@ -9852,7 +9852,7 @@ html.responsive body, html.responsive {
 .block-title2 {
   /*border-bottom-width: 2px;   border-bottom-style: solid; */
   margin-bottom: 15px;
-  padding-top: 10px; }
+  padding-top: 20px; }
 
 .block-title2 a, .block-title2 span {
   line-height: 28px;
@@ -9900,10 +9900,10 @@ html.responsive body, html.responsive {
 
 /* block 1 */
 .b-1 .b-item {
-  margin-bottom: 30px; }
+  margin-bottom: 15px; }
 
 .b-1 .b-thumnail {
-  margin-bottom: 30px; }
+  margin-bottom: 10px; }
 
 .b-1 .b-thumnail img {
   width: 100%; }
@@ -9951,7 +9951,7 @@ html.responsive body, html.responsive {
   margin: 0px; }
 
 .b-2 .b-thumnail {
-  margin-bottom: 30px; }
+  margin-bottom: 15px; }
 
 .b-2 .b-thumnail img {
   width: 100%; }
@@ -9974,7 +9974,7 @@ html.responsive body, html.responsive {
   top: -6.5%; }
 
 .b-2 .b-title {
-  margin-bottom: 15px; }
+  margin-bottom: 5px; }
 
 .b-2 .b-title.font-weight-normal {
   font-weight: normal; }
@@ -10013,7 +10013,7 @@ html.responsive body, html.responsive {
   color: #828282; }
 
 .b-2 .b-cat {
-  margin-bottom: 15px; }
+  margin-bottom: 25px; }
 
 .b-2 .b-cat i {
   font-size: 15px;
@@ -11761,7 +11761,9 @@ html.non-responsive {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
   .responsive .container {
-    min-width: 100%; }
+    min-width: 100%;
+    padding-left: 30px;
+    padding-right: 30px; }
   /* navbar tab and collapse */
   .responsive .tab-collapse {
     display: block; }
@@ -19735,9 +19737,12 @@ html.non-responsive {
         margin: auto 0px; }
 
 .block-flex-tab.md > ul > li a {
-  font-size: 9px;
+  font-size: 12px;
   color: #adb5bd;
   background-color: #F5F6FA; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .block-flex-tab.md > ul > li a {
+      font-size: 16px; } }
   .block-flex-tab.md > ul > li a i {
     font-size: 27px;
     display: block; }
