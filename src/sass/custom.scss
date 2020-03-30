@@ -34,7 +34,7 @@ html.responsive body, html.responsive { /*overflow-x: hidden;*/ }
 
 .avatar { width: 100%; }
 
-.mt-5p {margin-top: 5px;}
+.mt-5p {margin-top: 10px;}
 
 /* block 1 */
 .b-1 {  }
@@ -42,10 +42,10 @@ html.responsive body, html.responsive { /*overflow-x: hidden;*/ }
 .b-1 .b-item {  margin-bottom: 30px; }
 .b-1 .b-thumnail { margin-bottom: 30px; }
 .b-1 .b-thumnail img { width: 100%; }
-.b-1 .b-title { margin-bottom: 30px; }
-.b-1 .b-title a { display: block; font-size: 16px; color: #353535; line-height: 25px; word-wrap: break-word; word-break : break-all; }
+.b-1 .b-title { margin-bottom: 15px; }
+.b-1 .b-title a { display: block; font-size: 16px; color: #353535; line-height: 25px; word-wrap: break-word; word-break : break-all; max-height: 75px; overflow: hidden; }
 .b-1 .b-title.no-date { margin: 0px; }
-.b-1 .b-date { font-size: 13px; color: #828282; border-top: 1px solid #ccc; padding-top: 30px; }
+.b-1 .b-date { font-size: 13px; color: #828282; border-bottom: 1px solid #ccc; padding-bottom: 15px; }
 
 /* block 2 */
 .b-2 { margin: 0px; padding: 0px; }
@@ -60,11 +60,11 @@ html.responsive body, html.responsive { /*overflow-x: hidden;*/ }
 .b-2 .b-thumnail li.embed-responsive-6by4::before { padding-top: 66.66%; }
 .b-2 .b-thumnail li img { position: absolute; top: 0px; left: 0px; }
 .b-2 .b-thumnail li.embed-responsive-6by4.youtube-thumb img{ top: -6.5%; }
-.b-2 .b-title { margin-bottom: 10px; }
+.b-2 .b-title { margin-bottom: 15px; }
 .b-2 .b-title.font-weight-normal { font-weight: normal; }
 .b-2 .b-title, .b-2 .b-title a { font-size: 16px; color: #353535; line-height: 30px; word-wrap: break-word; word-break : break-all; }
 // .b-2 .b-title, .b-2 .b-title span { margin-right: 15px; }
-.b-2 .b-date { font-size: 13px; color: #828282; /*border-top: 1px solid #eee; */ padding-top: 15px; margin-bottom: 30px; }
+.b-2 .b-date { font-size: 13px; color: #828282; /*border-top: 1px solid #eee; padding-top: 15px; */ margin-bottom: 30px; }
 .b-2 .b-date span, .b-2 .b-date a { font-size: 12px; color: #828282; display: inline-block; margin-right: 15px; }
 .b-2 .b-date span.oi { margin-right: 5px; }
 .b-2 .b-date .hot { background-color: #f00; color: #fff; padding: 0px 5px; border-radius: 5px; font-weight: bold; }
@@ -91,12 +91,13 @@ html.responsive body, html.responsive { /*overflow-x: hidden;*/ }
 .b-4 ul { display: flex; padding: 15px 0px; margin-bottom: 30px; }
 .b-4 ul li { flex: 1; list-style: none; text-align: center }
 .b-4 ul li img { display: inline-block; margin-bottom: 15px; }
-.b-4 ul li a { display: block; font-size: 16px; font-weight: bold; }
-
+.b-4 ul li a { display: block; font-size: 16px; font-weight: bold;
+    @media screen and (max-width: 575px) { font-size: 12px;}}
 .b-5 ul { display: flex; padding: 15px; margin-bottom: 30px; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; }
 .b-5 ul li { flex: 1; list-style: none; text-align: center }
 .b-5 ul li:last-child a { border: none; }
-.b-5 ul li a { display: block; font-size: 16px; font-weight: bold; border-right: 1px solid #ccc; }
+.b-5 ul li a { display: block; font-size: 16px; font-weight: bold; border-right: 1px solid #ccc; 
+    @media screen and (max-width: 575px) { font-size: 12px;}}
 
 /* customization of all small screen header navigation*/
 .wrapper { display: block; position: relative; }

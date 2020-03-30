@@ -9896,7 +9896,7 @@ html.responsive body, html.responsive {
   width: 100%; }
 
 .mt-5p {
-  margin-top: 5px; }
+  margin-top: 10px; }
 
 /* block 1 */
 .b-1 .b-item {
@@ -9909,7 +9909,7 @@ html.responsive body, html.responsive {
   width: 100%; }
 
 .b-1 .b-title {
-  margin-bottom: 30px; }
+  margin-bottom: 15px; }
 
 .b-1 .b-title a {
   display: block;
@@ -9917,7 +9917,9 @@ html.responsive body, html.responsive {
   color: #353535;
   line-height: 25px;
   word-wrap: break-word;
-  word-break: break-all; }
+  word-break: break-all;
+  max-height: 75px;
+  overflow: hidden; }
 
 .b-1 .b-title.no-date {
   margin: 0px; }
@@ -9925,8 +9927,8 @@ html.responsive body, html.responsive {
 .b-1 .b-date {
   font-size: 13px;
   color: #828282;
-  border-top: 1px solid #ccc;
-  padding-top: 30px; }
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px; }
 
 /* block 2 */
 .b-2 {
@@ -9972,7 +9974,7 @@ html.responsive body, html.responsive {
   top: -6.5%; }
 
 .b-2 .b-title {
-  margin-bottom: 10px; }
+  margin-bottom: 15px; }
 
 .b-2 .b-title.font-weight-normal {
   font-weight: normal; }
@@ -9987,8 +9989,7 @@ html.responsive body, html.responsive {
 .b-2 .b-date {
   font-size: 13px;
   color: #828282;
-  /*border-top: 1px solid #eee; */
-  padding-top: 15px;
+  /*border-top: 1px solid #eee; padding-top: 15px; */
   margin-bottom: 30px; }
 
 .b-2 .b-date span, .b-2 .b-date a {
@@ -10100,6 +10101,9 @@ html.responsive body, html.responsive {
   display: block;
   font-size: 16px;
   font-weight: bold; }
+  @media screen and (max-width: 575px) {
+    .b-4 ul li a {
+      font-size: 12px; } }
 
 .b-5 ul {
   display: -webkit-box;
@@ -10127,6 +10131,9 @@ html.responsive body, html.responsive {
   font-size: 16px;
   font-weight: bold;
   border-right: 1px solid #ccc; }
+  @media screen and (max-width: 575px) {
+    .b-5 ul li a {
+      font-size: 12px; } }
 
 /* customization of all small screen header navigation*/
 .wrapper {

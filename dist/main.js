@@ -217,9 +217,9 @@ eval("__webpack_require__.r(__webpack_exports__);\nclass star {\n    constructor
   !*** ./src/js/sticky-scroll.js ***!
   \*********************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-eval("/* WEBPACK VAR INJECTION */(function($) {var query = document.querySelector('#menu-tab');\nif(query) {\n    var element = window.scrollY + query.getBoundingClientRect().top;\n    $( window ).scroll(function(){\n        if(window.scrollY >= element){\n            query.classList.add('sticky');\n        }else{\n            query.classList.remove('sticky');\n        }\n    });\n}\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./src/js/sticky-scroll.js?");
+eval("// var query = document.querySelector('#menu-tab');\n// if(query) {\n//     var element = window.scrollY + query.getBoundingClientRect().top;\n//     $( window ).scroll(function(){\n//         if(window.scrollY >= element){\n//             query.classList.add('sticky');\n//         }else{\n//             query.classList.remove('sticky');\n//         }\n//     });\n// }\n\n//# sourceURL=webpack:///./src/js/sticky-scroll.js?");
 
 /***/ }),
 
