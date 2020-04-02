@@ -8,7 +8,7 @@ $border-color: #F5F6FA;
             border-color: $border-color;
             color: $blue;
             h5 {
-                font-size: 22px;
+                font-size: 16px;
                 padding: 15px;
                 margin: 0px;
                 text-align: center;
@@ -16,8 +16,11 @@ $border-color: #F5F6FA;
                 border-color: $border-color;
                 background-color: $border-color;
                 i {
-                    font-size: 27px;
                     display: block;
+                    margin-bottom: 10px;
+                    img {
+                        width: 27px;
+                    }
                 }
             }
             > ul {
@@ -55,7 +58,7 @@ $border-color: #F5F6FA;
     > ul {
         > li {
             a {
-                font-size: 12px;
+                font-size: 10px;
                 color: $gray-500;
                 background-color: $border-color;
                 @media (min-width: 768px) and (max-width: 991px) {

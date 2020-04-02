@@ -11,12 +11,20 @@
     src: url(fonts/Battambang/Battambang-Bold_0.ttf);
 	font-weight: bold;
 }
+@font-face {
+    font-family: Siemreap;
+    src: url(fonts/Siemreap/Siemreap-Regular.ttf);
+}
 
 /* Overall default font */
-body { font-family: Battambang,Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif; }
+body { font-family: Siemreap,Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif; }
 html.responsive body, html.responsive { /*overflow-x: hidden;*/ }
 .container { background-color: #fff; }
-
+a:hover, 
+a:focus,
+.btn-link:hover,
+.btn-link:focus
+{text-decoration: none !important;}
 
 
 .block-title { /*border-bottom-width: 2px; */ border-bottom-style: solid; margin-bottom: 30px; }
@@ -49,9 +57,10 @@ html.responsive body, html.responsive { /*overflow-x: hidden;*/ }
 
 /* block 2 */
 .b-2 { margin: 0px; padding: 0px; }
-.b-2.bordered { border: 1px solid #ccc; padding: 20px 20px 0px 20px; margin-bottom: 30px; }
+.b-2.bordered { border: 1px solid #ccc; padding: 20px 20px 0px 20px; margin-bottom: 15px; }
 .b-2 .b-item-wrap { border-bottom: 1px solid #ccc; margin-bottom: 15px; padding: 0px; list-style: none; }
-.b-2 .b-item-wrap:last-child { border: none; margin: 0px; }
+.b-2 .b-item-wrap:last-child { margin: 0px; }
+.b-2 .b-item-wrap:last-child .b-cat { margin-bottom: 15px; }
 .b-2 .b-item {  }
 .b-2 .b-thumnail { margin-bottom: 15px; }
 .b-2 .b-thumnail img { width: 100%; }
@@ -92,7 +101,7 @@ html.responsive body, html.responsive { /*overflow-x: hidden;*/ }
 .b-4 ul li { flex: 1; list-style: none; text-align: center }
 .b-4 ul li img { display: inline-block; margin-bottom: 15px; }
 .b-4 ul li a { display: block; font-size: 16px; font-weight: bold;
-    @media screen and (max-width: 575px) { font-size: 12px;}}
+    @media screen and (max-width: 575px) { font-size: 11px;}}
 .b-5 ul { display: flex; padding: 15px; margin-bottom: 30px; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; }
 .b-5 ul li { flex: 1; list-style: none; text-align: center }
 .b-5 ul li:last-child a { border: none; }
@@ -469,9 +478,6 @@ html.non-responsive { overflow-x: auto; }
 .responsive .container { min-width: 100%; width: 0px; }
 .responsive .slick-slideshow .slick-item .slick-content h1 { font-size: 16px; padding: 5px 15px; line-height: 25px; }
 .responsive .slick-slideshow ul.slick-dots { display: none!important; }
-.responsive .b-news {background: none;}
-.responsive .b-news .col-lg-8 .col-lg-6, .responsive .b-news [class*=col-] .col-lg-12 {background: #fff; margin-bottom: 10px;}
-.responsive .b-news .col-lg-4 {background: #fff; }
 .nav-button { padding: 15px; }
 .nav-icon { font-size: 25px; }
 .sm-logo img { width: 50px; height: 50px; }
@@ -487,11 +493,17 @@ html.non-responsive { overflow-x: auto; }
 .responsive .tab-collapse > li > ul > li { display: inline-flex; width: 100%; }
 
 /* block 2 */
-.responsive .b-2 .b-title { margin-bottom: 15px; }
+// .responsive .b-2 .b-title { margin-bottom: 15px; }
 .responsive .b-2 .b-date { padding-top: 15px; }
 
 .responsive .fix-top { position: initial; }
 .responsive .slick-slideshow .slick-item .slick-photo .aspect-ratio::before { padding-top: 60%; }
+}
+
+@media (max-width: 991px) {
+    .responsive .b-news {background: none;}
+    .responsive .b-news .col-lg-8 .col-lg-6, .responsive .b-news [class*=col-] .col-lg-12 {background: #fff; margin-bottom: 10px; padding-bottom: 20px;}
+    .responsive .b-news .col-lg-4 {background: #fff; }
 }
 
 /* Small devices (landscape phones, 576px and up) */

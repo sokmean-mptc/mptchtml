@@ -44,7 +44,7 @@
                         display: block;
                         text-align: left;
                         background-color: #ffffff;
-                        padding: 15px 15px 15px 10px;
+                        padding: 6px 15px 6px 10px;
                         border: 0px;
                         border-radius: 0px;
                         border-left: 5px solid #f00;
@@ -53,7 +53,9 @@
                         
                         background-color: $gray-default;
                         border-left: 0px;
-                        padding: 15px;
+                        padding: 6px;
+                        border-bottom: 1px solid #fff !important;
+                        
                     }
                 }
                 .collapse,
@@ -63,6 +65,11 @@
 
                     }
                     
+                }
+                &:last-child {
+                    button.collapsed {
+                        border-bottom: none !important
+                    }
                 }
             }
         }

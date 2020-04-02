@@ -9826,15 +9826,25 @@ html {
   src: url(fonts/d181e97d6231f4cb6cacbfcc84c7dc3e.ttf);
   font-weight: bold; }
 
+@font-face {
+  font-family: Siemreap;
+  src: url(fonts/a0225d821ae388e76736a07a836a0cd5.ttf); }
+
 /* Overall default font */
 body {
-  font-family: Battambang,Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif; }
+  font-family: Siemreap,Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif; }
 
 html.responsive body, html.responsive {
   /*overflow-x: hidden;*/ }
 
 .container {
   background-color: #fff; }
+
+a:hover,
+a:focus,
+.btn-link:hover,
+.btn-link:focus {
+  text-decoration: none !important; }
 
 .block-title {
   /*border-bottom-width: 2px; */
@@ -9938,7 +9948,7 @@ html.responsive body, html.responsive {
 .b-2.bordered {
   border: 1px solid #ccc;
   padding: 20px 20px 0px 20px;
-  margin-bottom: 30px; }
+  margin-bottom: 15px; }
 
 .b-2 .b-item-wrap {
   border-bottom: 1px solid #ccc;
@@ -9947,8 +9957,10 @@ html.responsive body, html.responsive {
   list-style: none; }
 
 .b-2 .b-item-wrap:last-child {
-  border: none;
   margin: 0px; }
+
+.b-2 .b-item-wrap:last-child .b-cat {
+  margin-bottom: 15px; }
 
 .b-2 .b-thumnail {
   margin-bottom: 15px; }
@@ -10103,7 +10115,7 @@ html.responsive body, html.responsive {
   font-weight: bold; }
   @media screen and (max-width: 575px) {
     .b-4 ul li a {
-      font-size: 12px; } }
+      font-size: 11px; } }
 
 .b-5 ul {
   display: -webkit-box;
@@ -11687,13 +11699,6 @@ html.non-responsive {
     line-height: 25px; }
   .responsive .slick-slideshow ul.slick-dots {
     display: none !important; }
-  .responsive .b-news {
-    background: none; }
-  .responsive .b-news .col-lg-8 .col-lg-6, .responsive .b-news [class*=col-] .col-lg-12 {
-    background: #fff;
-    margin-bottom: 10px; }
-  .responsive .b-news .col-lg-4 {
-    background: #fff; }
   .nav-button {
     padding: 15px; }
   .nav-icon {
@@ -11724,14 +11729,22 @@ html.non-responsive {
     display: inline-flex;
     width: 100%; }
   /* block 2 */
-  .responsive .b-2 .b-title {
-    margin-bottom: 15px; }
   .responsive .b-2 .b-date {
     padding-top: 15px; }
   .responsive .fix-top {
     position: initial; }
   .responsive .slick-slideshow .slick-item .slick-photo .aspect-ratio::before {
     padding-top: 60%; } }
+
+@media (max-width: 991px) {
+  .responsive .b-news {
+    background: none; }
+  .responsive .b-news .col-lg-8 .col-lg-6, .responsive .b-news [class*=col-] .col-lg-12 {
+    background: #fff;
+    margin-bottom: 10px;
+    padding-bottom: 20px; }
+  .responsive .b-news .col-lg-4 {
+    background: #fff; } }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -19682,17 +19695,20 @@ html.non-responsive {
         display: block;
         text-align: left;
         background-color: #ffffff;
-        padding: 15px 15px 15px 10px;
+        padding: 6px 15px 6px 10px;
         border: 0px;
         border-radius: 0px;
         border-left: 5px solid #f00; }
       .tab-collapse .tab-content .tab-pane .collapse-title button.collapsed {
         background-color: #F5F6FA;
         border-left: 0px;
-        padding: 15px; }
+        padding: 6px;
+        border-bottom: 1px solid #fff !important; }
     .tab-collapse .tab-content .tab-pane .collapse .collapse-body,
     .tab-collapse .tab-content .tab-pane .collapsing .collapse-body {
-      padding-top: 30px; } }
+      padding-top: 30px; }
+    .tab-collapse .tab-content .tab-pane:last-child button.collapsed {
+      border-bottom: none !important; } }
 
 @media (min-width: 768px) {
   .tab-collapse .tab-content .collapse-title {
@@ -19708,7 +19724,7 @@ html.non-responsive {
     border-color: #F5F6FA;
     color: #1d75af; }
     .block-flex-tab.lg > ul > li h5 {
-      font-size: 22px;
+      font-size: 16px;
       padding: 15px;
       margin: 0px;
       text-align: center;
@@ -19716,8 +19732,10 @@ html.non-responsive {
       border-color: #F5F6FA;
       background-color: #F5F6FA; }
       .block-flex-tab.lg > ul > li h5 i {
-        font-size: 27px;
-        display: block; }
+        display: block;
+        margin-bottom: 10px; }
+        .block-flex-tab.lg > ul > li h5 i img {
+          width: 27px; }
     .block-flex-tab.lg > ul > li > ul {
       margin: 20px; }
   .block-flex-tab.lg > ul > li:last-child {
@@ -19737,7 +19755,7 @@ html.non-responsive {
         margin: auto 0px; }
 
 .block-flex-tab.md > ul > li a {
-  font-size: 12px;
+  font-size: 10px;
   color: #adb5bd;
   background-color: #F5F6FA; }
   @media (min-width: 768px) and (max-width: 991px) {
