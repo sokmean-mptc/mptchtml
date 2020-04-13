@@ -10156,11 +10156,11 @@ a:focus,
   background-color: #eee;
   /*transform: translate3d(0,0,0);*/
   position: relative;
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
-  -o-transition: transform .3s;
-  transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
+  -webkit-transition: -webkit-transform .1s;
+  transition: -webkit-transform .1s;
+  -o-transition: transform .1s;
+  transition: transform .1s;
+  transition: transform .1s, -webkit-transform .1s;
   -webkit-box-flex: 1;
   -webkit-flex: auto;
       -ms-flex: auto;
@@ -10341,19 +10341,22 @@ a:focus,
   background-color: #fff; }
 
 .sm-logo {
-  padding-left: 15px; }
+  padding-left: 5px; }
 
 .sm-logo img {
   width: 80px;
   height: auto; }
 
 .sm-title {
-  padding-left: 15px; }
+  padding-left: 5px; }
 
 .sm-title h1 {
   font-size: 22px;
   line-height: 35px;
   margin: 0; }
+
+.sm-title small {
+  font-size: 16px; }
 
 .sm-title span {
   font-size: 15px; }
@@ -10498,13 +10501,15 @@ a:focus,
   display: block !important; }
 
 .lg-header {
-  background-image: url(images/9b47eb388c53694fc9d8dd0222d66274.jpg);
+  background-image: url(images/1b2bd9945c63b1274ca9afb1d5624655.jpg);
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: bottom;
   width: 100%;
   padding: 30px;
-  background-color: #fff; }
+  background-color: #ffffff7a;
+  background-size: cover;
+  background-blend-mode: color; }
 
 .lg-logo img {
   width: 150px;
@@ -11710,6 +11715,8 @@ html.non-responsive {
     font-size: 16px;
     margin: 0px;
     line-height: 25px; }
+  .sm-title small {
+    font-size: 12px; }
   .sm-title span {
     font-size: 13px; }
   /* navbar tab and collapse */
