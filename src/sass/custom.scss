@@ -110,7 +110,7 @@ a:focus,
 
 /* customization of all small screen header navigation*/
 .wrapper { display: block; position: relative; }
-.content { background-color: #eee; /*transform: translate3d(0,0,0);*/ position: relative; transition: transform .3s; flex: auto; }
+.content { background-color: #eee; /*transform: translate3d(0,0,0);*/ position: relative; transition: transform .1s; flex: auto; }
 .content.isOpen { transform: translate3d(300px,0,0); }
 
 .non-responsive .nav-sidebar { display: none!important; }
@@ -151,10 +151,11 @@ a:focus,
 .nav-button { padding: 20px; cursor: pointer; background-color: #eee; }
 .nav-icon { font-size: 40px; color: #000; }
 .sm-header { border-bottom: 1px solid #ccc; background-color: #fff; }
-.sm-logo { padding-left: 15px; }
+.sm-logo { padding-left: 5px; }
 .sm-logo img { width: 80px; height: auto; }
-.sm-title { padding-left: 15px; }
+.sm-title { padding-left: 5px; }
 .sm-title h1{ font-size: 22px; line-height: 35px; margin: 0; }
+.sm-title small { font-size: 16px;}
 .sm-title span{ font-size: 15px; }
 .non-responsive .sm-header { display: none!important; }
 
@@ -482,6 +483,7 @@ html.non-responsive { overflow-x: auto; }
 .nav-icon { font-size: 25px; }
 .sm-logo img { width: 50px; height: 50px; }
 .sm-title h1{ font-size: 16px; margin: 0px; line-height: 25px; }
+.sm-title small { font-size: 12px;}
 .sm-title span{ font-size: 13px; }
 
 

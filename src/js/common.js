@@ -42,7 +42,7 @@ jQuery(document).ready(function() {
     jQuery(".collapse-navbar .menu-item-has-children ul").parent(".current-menu-ancestor").find("ul").show();
     jQuery(".collapse-navbar .menu-item-has-children ul").parent(".current-menu-ancestor").find(".right").toggleClass("oi-chevron-top oi-chevron-bottom");
     jQuery(".collapse-navbar .menu-item-has-children span").click(function () {
-        jQuery(this).parent(".menu-item-has-children").children("ul").slideToggle("slow");
+        jQuery(this).parent(".menu-item-has-children").children("ul").slideToggle(100);
         jQuery(this).parent(".menu-item-has-children").find(".right").toggleClass("oi-chevron-top oi-chevron-bottom");
     });
     
