@@ -10037,7 +10037,8 @@ a:focus,
 
 .b-2 .b-cat i {
   font-size: 15px;
-  margin-right: 3px; }
+  margin-right: 3px;
+  color: #828282; }
 
 .b-2 .b-cat span, .b-2 .b-cat a {
   font-size: 12px;
