@@ -9935,7 +9935,7 @@ a:focus,
   color: #353535;
   line-height: 25px;
   word-wrap: break-word;
-  word-break: break-all;
+  word-break: normal;
   max-height: 75px;
   overflow: hidden; }
 
@@ -10004,7 +10004,7 @@ a:focus,
   color: #353535;
   line-height: 30px;
   word-wrap: break-word;
-  word-break: break-all; }
+  word-break: normal; }
 
 .b-2 .b-date {
   font-size: 13px;
@@ -10096,7 +10096,7 @@ a:focus,
   color: #353535;
   line-height: 29px;
   word-wrap: break-word;
-  word-break: break-all; }
+  word-break: normal; }
 
 .b-4 ul {
   display: -webkit-box;
