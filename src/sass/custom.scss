@@ -15,9 +15,17 @@
     font-family: Siemreap;
     src: url(fonts/Siemreap/Siemreap-Regular.ttf);
 }
+@font-face {
+    font-family: Koh-Santepheap-Body;
+    src: url(fonts/KohSantepheap/Koh-Santepheap-Regular.ttf);
+}
+@font-face {
+    font-family: Koh-Santepheap-Head;
+    src: url(fonts/KohSantepheap/Koh-Santepheap-Bold.ttf);
+}
 
 /* Overall default font */
-body { font-family: Siemreap,Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif; }
+body { font-family: Koh-Santepheap-Body,Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif; }
 html.responsive body, html.responsive { /*overflow-x: hidden;*/ }
 .container { background-color: #fff; }
 a:hover, 
