@@ -330,12 +330,13 @@ a:focus,
 .tab-collapse .nav-collapse {margin-right: 0 !important;}
 .tab-collapse .nav-collapse a {flex-basis: 0; flex-grow: 1;text-align: center; position: relative; font-size: 16px; line-height: 27px; display: block; padding: 10px; background: #eee; font-weight: bold; border-bottom: 1px solid #eee;}
 .tab-collapse .nav-collapse a.active {border-bottom: 1px solid;}
-.tab-collapse .nav-collapse a.active:before { display: block; content: ''; left: calc( 50% - 10px); position: absolute; width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid; bottom: -10px;}
+// .tab-collapse .nav-collapse a.active:before { display: block; content: ''; left: calc( 50% - 10px); position: absolute; width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid; bottom: -10px;}
 .tab-collapse .tab-content .collapse { padding: 30px;}
 .tab-collapse .tab-content .tab-pane {padding: 0 !important; margin-bottom: 0 !important;}
+.tab-collapse .tab-content .tab-pane.active .collapse-title button {border-bottom: 1px solid !important;}
 .tab-collapse .tab-content .tab-pane .collapse-title {margin: 0 !important;}
 .tab-collapse .tab-content .tab-pane .collapse-title button {color: #2082c3; border: none !important; background: #eee !important; text-align: center !important; font-weight:bold; position: relative;}
-.tab-collapse .tab-content .tab-pane .collapse-title button:before {display: block; content: ''; left: calc( 50% - 10px); position: absolute; width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid; bottom: -10px; color: #2082c3;}
+// .tab-collapse .tab-content .tab-pane .collapse-title button:before {display: block; content: ''; left: calc( 50% - 10px); position: absolute; width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid; bottom: -10px; color: #2082c3;}
 .tab-collapse .tab-content .tab-pane .collapse-title button.collapsed::before {content: none;}
 
 
@@ -493,6 +494,7 @@ html.non-responsive { overflow-x: auto; }
 .sm-title h1{ font-size: 16px; margin: 0px; line-height: 25px; }
 .sm-title small { font-size: 12px;}
 .sm-title span{ font-size: 13px; }
+.b-1.border-bottom, .b-2.border-bottom {border-bottom: none !important;}
 
 
 /* navbar tab and collapse */
@@ -513,7 +515,7 @@ html.non-responsive { overflow-x: auto; }
 @media (max-width: 991px) {
     .responsive .b-news {background: none;}
     .responsive .b-news .col-lg-8 .col-lg-6, .responsive .b-news [class*=col-] .col-lg-12 {background: #fff; margin-bottom: 10px; padding-bottom: 20px;}
-    .responsive .b-news .col-lg-4 {background: #fff; }
+    .responsive .b-news .col-lg-4 {background: #fff; margin-bottom: 10px; }
 }
 
 /* Small devices (landscape phones, 576px and up) */
