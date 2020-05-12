@@ -9864,7 +9864,7 @@ a:focus,
   margin-bottom: 15px;
   padding-top: 20px; }
 
-.block-title2 a, .block-title2 span {
+.block-title2 a, .block-title2 span, .block-title2 h3 {
   line-height: 28px;
   display: inline-block;
   font-size: 20px;
@@ -9951,7 +9951,7 @@ a:focus,
   margin-bottom: 15px; }
 
 .b-2 .b-item-wrap {
-  border-bottom: 1px solid #ccc;
+  /*border-bottom: 1px solid #ccc; */
   margin-bottom: 15px;
   padding: 0px;
   list-style: none; }
@@ -10498,7 +10498,7 @@ a:focus,
   display: block !important; }
 
 .lg-header {
-  background-image: url(images/9b47eb388c53694fc9d8dd0222d66274.jpg);
+  background-image: url(images/dc08c19b9d246522923fa540fb6b1bd4.jpg);
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: bottom;
