@@ -494,8 +494,10 @@ html.non-responsive { overflow-x: auto; }
 .nav-button { padding: 15px; }
 .nav-icon { font-size: 25px; }
 .sm-logo img { width: 50px; height: 50px; }
-.sm-title h1{ font-size: 16px; margin: 0px; line-height: 25px; }
-.sm-title small { font-size: 12px;}
+.sm-title h1{ font-size: 15px; margin: 0px; line-height: 25px; }
+.sm-title h1:lang(en-US){ font-size: 11px;}
+.sm-title small { font-size: 11px;}
+.sm-title small:lang(km) { font-size: 15px;}
 .sm-title span{ font-size: 13px; }
 .b-1.border-bottom, .b-2.border-bottom {border-bottom: none !important;}
 
