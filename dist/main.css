@@ -9840,7 +9840,7 @@ html {
 
 /* Overall default font */
 body {
-  font-family: Koh-Santepheap-Body,Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif; }
+  font-family: Roboto,Helvetica Neue,Koh-Santepheap-Body,Arial,Noto Sans,sans-seri; }
 
 html.responsive body, html.responsive {
   /*overflow-x: hidden;*/ }
@@ -11650,7 +11650,7 @@ html.non-responsive {
   position: relative; }
 
 .font-moul {
-  font-family: Moul,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; }
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Moul,Helvetica Neue,Arial,Noto Sans,sans-serif; }
 
 .block {
   display: block; }
@@ -19699,8 +19699,7 @@ html.non-responsive {
       .tab-collapse .tab-content .tab-pane .collapse-title button.collapsed {
         background-color: #F5F6FA;
         border-left: 0px;
-        padding: 6px;
-        border-bottom: 1px solid #fff !important; }
+        padding: 6px; }
     .tab-collapse .tab-content .tab-pane .collapse .collapse-body,
     .tab-collapse .tab-content .tab-pane .collapsing .collapse-body {
       padding-top: 30px; }
