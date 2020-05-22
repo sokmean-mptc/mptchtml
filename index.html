@@ -26,79 +26,49 @@
 	<body>
 		<!-- wrap all content container -->
 		<div class="wrapper">
-			<!-- mobile menu on left sidebar -->
-			<div class="nav-sidebar d-md-block d-lg-none primary-background-color">
-				<div class="nav-sidebar-header pt-4">
-					<!-- mobile Royal Cambodia logo & title -->
-					<!--img class="khmer-logo" src="src/sass/images/khmer-logo.png" /-->
-					<!-- <object class="khmer-logo" class="d-inline-block" type="image/svg+xml" data="src/sass/images/Royal_Cambodia.svg" width="" height=""></object>
-					<h1 class="font-moul khmer-title primary-color">ព្រះរាជាណាចក្រកម្ពុជា <br/>ជាតិ សាសនា ព្រះមហាក្សត្រ</h1> -->
-					<!-- mobile search form -->
-					<form class="form-inline">
-						<div class="input-group mb-3">
-							<div class="input-group-prepend primary-background-color">
-								<button class="btn btn-outline" type="submit" id="button-addon1"><span class="oi oi-magnifying-glass"></span></button>
-							</div>
-							<input type="text" class="form-control" placeholder="ស្វែងរក" aria-label="Example text with button addon" aria-describedby="button-addon1">
-						</div>
-					</form>	
-					<!-- mobile polylang -->
-					<div class="languages d-block text-center">
-						<ul>
-							<li class="active"><a href="#">ខ្មែរ</a></li>
-							<li><a href="#">Eng</a></li>
-						</ul>
-					</div>
-					<!-- mobile top menu bar -->
-					<ul class="short-link">
-						<li><a class="primary-color" href="#">ជជែកផ្ទាល់</a></li>
-						<li><a class="primary-color" href="#">ទំនាក់ទំនង</a></li>
-						<li><a class="primary-color" href="#">ផ្តល់មតិយោបល់</a></li>
-						<li><a class="primary-color" href="#">សំនួរ ចម្លើយ</a></li>
-					</ul>
-				</div>
-				<!-- mobile main navigation -->
-				<nav class="collapse-navbar sm-navbar">
-					<ul>
-					<!-- automaticaly adding html menu by script from desktop main navigation -->
-					</ul>
-				</nav>
-			</div>
 			<!-- contain all containers -->
 			<div class="content">
 				<!-- mobile header -->
 				<div class="sm-header d-md-block d-lg-none">
-					<div class="nav-button inline-block vertical-align-middle">
-						<span class="oi oi-menu nav-icon primary-color"></span>
-					</div>
-					<a href="index.html" class="sm-logo inline-block vertical-align-middle">
+					<a href="index.html" class="sm-logo inline-block vertical-align-middle py-2">
 						<img src="src/sass/images/logo.png" />
 					</a>
 					<div class="sm-title inline-block vertical-align-middle primary-color">
 						<h1 class="font-moul">ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍</h1>
 						<small>Ministry of Posts and Telecommunications</small>
 					</div>
+					<div class="nav-button vertical-align-middle">
+						<div class="languages d-inline-block text-center">
+							<ul class="text-center list-inline navbar-brand my-auto ml-3 d-lg-none language">
+								<li class="list-inline-item"><a href="#"><img srcset="src/sass/images/kh@2x.jpg 2x" src="src/sass/images/kh.jpg">ខ្មែរ</a></li>
+								<li class="list-inline-item"><a href="#"><img srcset="src/sass/images/en@2x.jpg 2x" src="src/sass/images/en.jpg">Eng</a></li>
+							</ul>
+						</div>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="oi oi-menu nav-icon primary-color"></span>
+						  </button>
+					</div>
 				</div>
 				<!-- desktop header -->
-				<div id="lg-header" class="lg-header-wrap d-none d-lg-block">
-					<div class="container lg-header">
+				<div id="lg-header" class="lg-header-wrap">
+					<div class="container lg-header d-none d-lg-block">
 						<div class="row">
 							<!-- desktop logo and site title -->
-							<div class="col-7">
+							<div class="col-8">
 								<a href="index.html" class="lg-logo inline-block vertical-align-middle">
 									<img src="src/sass/images/logo.png" />
 								</a>
 								<div class="lg-title inline-block vertical-align-middle primary-color">
-									<h1 class="font-moul">ក្រសួងប្រៃសណីយ៍<br/>និងទូរគមនាគមន៍</h1>
-									<span>MINISTRY OF POSTS<br/>AND TELECOMMUNICATIONS</span>
+									<h1 class="font-moul">ក្រសួងប្រៃសណីយ៍ និងទូរគមនាគមន៍</h1>
+									<span>MINISTRY OF POST AND TELECOMMUNICATIONS</span>
 								</div>
 							</div>
 							<!-- desktop Cambodia sign -->
-							<div class="col-5 logo-wrap text-right my-auto">
+							<div class="col logo-wrap text-right my-auto">
 								
-								<time class="mb-3 d-block khmer-time">
+								<time class="mb-3 d-block khmer-time d-none">
 
-									<div class="input-group">
+									<div class="input-group d-none">
 										<input type="text" id="input-khmer-time" readonly class="form-control" value="ថ្ងៃ៨រោច ខែចេត្រ ឆ្នាំជូត ទោស័ក ព.ស២៥៦៣" aria-describedby="basic-addon1">
 										<div class="input-group-prepend">
 											<i onclick="clickCopy.action('input-khmer-time')" id="basic-addon1" class="icofont-copy input-group-text" title="Click to copy"></i>
@@ -107,24 +77,16 @@
 
 								</time>
 								
-								<!-- desktop search form -->
-								<form class="form-inline inline-block">
-									<div class="input-group input-group-sm mb-2">
-										<div class="input-group-prepend primary-background-color">
-											<button class="btn btn-outline" type="submit" id="button-addon1"><span class="oi oi-magnifying-glass"></span></button>
-										</div>
-										<input type="text" class="form-control" placeholder="ស្វែងរក" aria-label="Example text with button addon" aria-describedby="button-addon1">
-									</div>
-								</form>
+								
 								<!-- desktop polylang -->
-								<div class="languages d-inline-block">
+								<div class="languages d-inline-block text-center">
 									<ul>
-										<li class="active"><a href="#">ខ្មែរ</a></li>
-										<li><a href="#">Eng</a></li>
+										<li><a href="#"><img srcset="src/sass/images/kh@2x.jpg 2x" src="src/sass/images/kh.jpg">ខ្មែរ</a></li>
+										<li><a href="#"><img srcset="src/sass/images/en@2x.jpg 2x" src="src/sass/images/en.jpg">Eng</a></li>
 									</ul>
 								</div>
 								<!-- desktop top menu -->
-								<nav class="short-link">
+								<nav class="short-link d-none">
 									<ul>
 										<li><a href="#">ជជែកផ្ទាល់</a></li>
 										<li><a href="#">ទំនាក់ទំនង</a></li>
@@ -136,9 +98,9 @@
 						</div>
 					</div>
 					<!-- desktop main navigation -->
-					<div class="lg-main-nav-wrap container">
+					<div class="lg-main-nav-wrap container navbar-expand-lg">
 						<div class="row">
-							<nav class="lg-main-nav">
+							<nav class="lg-main-nav collapse navbar-collapse" id="main-nav">
 								<ul>
 									<li><a href="#">ទំព័រដើម</a></li>
 									<li class="menu-item-has-children current-menu-ancestor"><a href="#">អំពីក្រសួង</a>
@@ -179,29 +141,15 @@
 									</li>
 									<li><a href="#">ទិន្នន័យមូលដ្ឋាន</a></li>
 								</ul>
-								<!-- search form -->
-								<!--div class="pull-right">
-									<form class="form-search">
-										<div class="input-group input-group-sm">
-											<div class="input-group-prepend no-bg" id="button-addon3">
-												<a href="#"><img src="src/sass/images/facebook-icon.jpg" /></a>
-												<a href="#"><img src="src/sass/images/youtube-icon.jpg" /></a>
-											</div>
-											<input type="text" class="form-control" placeholder="ស្វែងរក" />
-											<div class="input-group-prepend">
-												<button class="btn btn-outline" type="submit" id="button-addon1"><span class="oi oi-magnifying-glass"></span></button>
-											</div>
-										</div>
-									</form>	
-								</div-->
+								
 							</nav>
 							
 						</div>
 					</div>
 					<!-- marquee html -->
-					<div class="container marquee-wrap">
+					<!-- <div class="container marquee-wrap">
 						<div id="marquee" class="marquee row primary-color">
-							<marquee behavior="scroll" direction="left" scrollamount="5" onmouseover="this.setAttribute('scrollamount',0);" onmouseout="this.setAttribute('scrollamount',5);" >
+							<marquee class="marquee-line" behavior="scroll" direction="left" scrollamount="5" onmouseover="this.setAttribute('scrollamount',0);" onmouseout="this.setAttribute('scrollamount',5);" >
 								<ul>
 									<li><span class="oi oi-media-record"></span> <a href="#">​​ឯកឧត្តម​រដ្ឋមន្ត្រី​ ​ត្រាំ​ អុី​វ​តឹក​ ​អញ្ជើញ​ប្រកាស​ត​ម្លើ​ង​ឋានៈ​ ​និង​តែងតាំង​ ​រដ្ឋលេខាធិការ​ ​អនុរដ្ឋលេខាធិការ​ ​និង​ទីប្រឹក្សា​ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍​</a></li>
 									<li><span class="oi oi-media-record"></span> <a href="#">​​ឯកឧត្ដម​រដ្ឋមន្ត្រី​ ​ត្រាំ​ អុី​វ​តឹក​ ​អញ្ជើញ​ចែក​សញ្ញាបត្រ​ថ្នាក់​បរិញ្ញាបត្រ​ដល់​និស្សិ​ត​ជំនាន់​ទី​១​ ​របស់​វិទ្យាស្ថាន​ជាតិ​ (និ​ប​ទិ​ក​-​NIP​TIC​T​) </a></li>
@@ -210,7 +158,7 @@
 								</ul>
 							</marquee>
 						</div>
-					</div>
+					</div> -->
 				</div>
 				
 				<!-- slideshow container -->
@@ -223,7 +171,7 @@
 										<div class="img" style="background-image: url(src/sass/images/slide-show/photo_01.jpg);" ></div>
 									</div>
 								</div>
-								<div class="primary-background-color">
+								<div class="primary-background-color slick-title">
 									<a href="#">រដ្ឋបាលខេត្តកំពតនឹងរៀបចំពិធីបុណ្យអំុទូក អកអំបុក និងសំពះព្រះខែ</a>
 								</div>
 							</div>
@@ -233,7 +181,7 @@
 										<div class="img" style="background-image: url(src/sass/images/slide-show/photo_02.jpg);" ></div>
 									</div>
 								</div>
-								<div class="primary-background-color">
+								<div class="primary-background-color slick-title">
 									<a href="#">រដ្ឋបាលខេត្តកំពតនឹងរៀបចំពិធីបុណ្យអំុទូក អកអំបុក និងសំពះព្រះខែ</a>
 								</div>
 							</div>
@@ -243,7 +191,7 @@
 										<div class="img" style="background-image: url(src/sass/images/slide-show/photo_03.jpg);" ></div>
 									</div>
 								</div>
-								<div class="primary-background-color">
+								<div class="primary-background-color slick-title">
 									<a href="#">រដ្ឋបាលខេត្តកំពតនឹងរៀបចំពិធីបុណ្យអំុទូក អកអំបុក និងសំពះព្រះខែ</a>
 								</div>
 							</div>
@@ -253,12 +201,39 @@
 										<div class="img" style="background-image: url(src/sass/images/slide-show/photo_04.jpg);" ></div>
 									</div>
 								</div>
-								<div class="primary-background-color">
+								<div class="primary-background-color slick-title">
 									<a href="#">រដ្ឋបាលខេត្តកំពតនឹងរៀបចំពិធីបុណ្យអំុទូក អកអំបុក និងសំពះព្រះខែ</a>
 								</div>
 							</div>
 						</div>
 					</div>
+				</div>
+
+				<!-- Section Search -->
+				<div class="container p-0">
+					<!-- desktop search form -->
+					<section class="">
+						<div class="form-search without-slideshow py-4 px-4 mb-0">
+							<form action="search.html" method="POST">
+								<div class="input-field input-group">
+									<input type="search" class="text-field form-control" placeholder="Search All Government" />
+									<div class="input-group-append">
+										<button type="submit" class="submit-field btn btn-primary"><span class="d-none d-md-inline">Search</span> <i class="icofont-search"></i></button>
+									</div>
+								</div>
+							</form>
+							<ul>
+								<li>
+									<label>Popular Keywords:</label>
+									<ul>
+										<li><a href="#">registrator domain name</a></li>
+										<li><a href="#">អាជ្ញាបណ្ឌ ict</a></li>
+										<li><a href="#">អាជ្ញាបណ្ឌប្រៃសណីយ៍</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</section>
 				</div>
 
 				<!-- POPULAR SERVICES -->
@@ -270,7 +245,7 @@
 					<div class="lg block-flex-tab d-lg-block d-none">
 						<ul class="nav nav-pills nav-justified">
 							<li class="nav-item">
-								<h5> <i><img src="/src/sass/images/icons/envelope.svg" alt="" width="27px"></i> ប្រៃសណីយ៍</h5>
+								<h5><i class="icofont-send-mail"></i> ប្រៃសណីយ៍</h5>
 								<ul>
 									<li class="d-flex justify-content-between">
 										<a href="service-list.html">សេវាបញ្ញើរ</a><i class="icofont-arrow-right"></i>
@@ -284,7 +259,7 @@
 								</ul>
 							</li>
 							<li class="nav-item">
-									<h5><i><img src="/src/sass/images/icons/antenna.svg" alt="" width="27px"></i> ទូរគមនាគមន៍</h5>
+									<h5><i class="icofont-satellite"></i> ទូរគមនាគមន៍</h5>
 								<ul>
 									<li class="d-flex justify-content-between">
 										<a href="service-list.html">ការស្នើសុំគេហទំព័រ (.kh)</a><i class="icofont-arrow-right"></i>
@@ -298,7 +273,7 @@
 								</ul>
 							</li>
 							<li class="nav-item">
-								<h5><i><img src="/src/sass/images/icons/pc.svg" alt="" width="27px"></i> បច្ចេកវិទ្យាគមនាគមន៍ និងព័ត៌មាន</h5>
+								<h5><i class="icofont-computer"></i> បច្ចេកវិទ្យាគមនាគមន៍ និងព័ត៌មាន</h5>
 								<ul>
 									<li class="d-flex justify-content-between">
 										<a href="service-list.html">ការសុំវិញ្ញាបនបត្រ</a><i class="icofont-arrow-right"></i>
@@ -319,13 +294,13 @@
 					
 						<ul class="nav nav-justified" role="tablist">
 							<li class="nav-item">
-								<a class="nav-link active text-nowrap" id="tab-1" data-toggle="pill" href="#tab-content-1" role="tab" aria-controls="tab-content-1" aria-selected="true"><i><img src="/src/sass/images/icons/envelope.svg" alt="" width="27px"></i>ប្រៃសណីយ៍</a>
+								<a class="nav-link active text-nowrap" id="tab-1" data-toggle="pill" href="#tab-content-1" role="tab" aria-controls="tab-content-1" aria-selected="true"><i class="icofont-send-mail"></i>ប្រៃសណីយ៍</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-nowrap" id="tab-2" data-toggle="pill" href="#tab-content-2" role="tab" aria-controls="tab-content-2" aria-selected="false"><i><img src="/src/sass/images/icons/antenna.svg" alt="" width="27px"></i> ទូរគមនាគមន៍</a>
+								<a class="nav-link text-nowrap" id="tab-2" data-toggle="pill" href="#tab-content-2" role="tab" aria-controls="tab-content-2" aria-selected="false"><i class="icofont-satellite"></i> ទូរគមនាគមន៍</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-nowrap" id="tab-3" data-toggle="pill" href="#tab-content-3" role="tab" aria-controls="tab-content-3" aria-selected="false"><i><img src="/src/sass/images/icons/pc.svg" alt="" width="27px"></i>បច្ចេកវិទ្យាគមនាគមន៍ និងព័ត៌មាន</a>
+								<a class="nav-link text-nowrap" id="tab-3" data-toggle="pill" href="#tab-content-3" role="tab" aria-controls="tab-content-3" aria-selected="false"><i class="icofont-computer"></i>បច្ចេកវិទ្យាគមនាគមន៍ និងព័ត៌មាន</a>
 							</li>
 						</ul>
 						<div class="tab-content">
@@ -692,7 +667,7 @@
 					</div>
 				</div>
 				<!-- section 3 -->
-				<div class="container plr-lg-30 plr-md-30 mt-5p pb-1">	
+				<div class="container plr-lg-30 plr-md-30 pb-1 mt-5p">	
 					<div class="block-title2 primary-color">
 						<span class="primary-color">អង្គភាពស្វយ័ត</span>
 					</div>
@@ -876,7 +851,7 @@
 							<div class="modal-dialog modal-dialog-centered" role="document">
 								<div class="modal-content">
 									<div class="modal-header">
-										<img src="./assets/images/fav-32.png" class="mr-2" alt="">
+										<!-- <img src="./assets/images/fav-32.png" class="mr-2" alt=""> -->
 										<h5 class="modal-title" id="feedback-modal-center-title">ក្រសួងប្រៃសណីយ៍
 											និងទូរគមនាគមន៍</h5>
 										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
