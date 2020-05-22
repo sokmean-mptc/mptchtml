@@ -35,6 +35,24 @@
         }
     }
 }
+@include media-breakpoint-up(md) {
+    .form-inline {
+        justify-content: center;
+        .input-group {
+            width: 70%;
+            .btn {
+                font-size: 18px;
+                padding: 6px 20px;
+                color: #fff;
+                border-radius: .25rem;
+            }
+        }
+        .input-group-sm > .form-control:not(textarea) {
+            height: calc(1.5em + 0.5rem + 12px);
+        }
+    }
+}
+
 @include media-breakpoint-up(lg) {
     .search {
         .tab {
