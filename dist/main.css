@@ -19365,6 +19365,9 @@ html.non-responsive {
   background-color: #F5F6FA; }
   .form-search .input-field .text-field {
     border: none; }
+  .form-search .input-field .submit-field {
+    background-color: #2182c3;
+    border-color: #2182c3; }
 
 .form-search ul {
   margin: 0px;
