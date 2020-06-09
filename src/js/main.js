@@ -7,6 +7,7 @@ import './jquery.youtubeplaylist.js';
 import './common.js';
 import './sticky-scroll';
 import servay from './servay';
+import match from './match';
 import feedback from './feedback';
 import clickCopy from './click-copy';
 $(document).ready( () => {
@@ -15,3 +16,4 @@ $(document).ready( () => {
 window.servay = new servay()
 window.feedback = new feedback()
 window.clickCopy = new clickCopy()
+window.match = new match()
