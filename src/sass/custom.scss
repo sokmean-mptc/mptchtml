@@ -334,9 +334,9 @@ a:focus,
 // .tab-collapse .nav-collapse a.active:before { display: block; content: ''; left: calc( 50% - 10px); position: absolute; width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid; bottom: -10px;}
 .tab-collapse .tab-content .collapse { padding: 30px;}
 .tab-collapse .tab-content .tab-pane {padding: 0 !important; margin-bottom: 0 !important;}
-.tab-collapse .tab-content .tab-pane.active .collapse-title button {border-bottom: 1px solid !important;}
+.tab-collapse .tab-content .tab-pane .collapse-title button {border-bottom: 1px solid !important;}
 .tab-collapse .tab-content .tab-pane .collapse-title {margin: 0 !important;}
-.tab-collapse .tab-content .tab-pane .collapse-title button {color: #2082c3; border: none !important; background: #eee !important; text-align: center !important; font-weight:bold; position: relative;}
+.tab-collapse .tab-content .tab-pane .collapse-title button {color: #2082c3; background: #eee !important; text-align: center !important; font-weight:bold; position: relative;}
 // .tab-collapse .tab-content .tab-pane .collapse-title button:before {display: block; content: ''; left: calc( 50% - 10px); position: absolute; width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid; bottom: -10px; color: #2082c3;}
 .tab-collapse .tab-content .tab-pane .collapse-title button.collapsed::before {content: none;}
 
